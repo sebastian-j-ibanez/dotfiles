@@ -15,4 +15,6 @@ source ~/.scripts/git-prompt.sh
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " %s")'; PS1='\[\e[97m\]\u\[\e[0m\] \[\e[38;5;117m\]\w\[\e[38;5;210m\]${PS1_CMD1}\[\e[0m\]\n󰘧 '
 
 # Aliases
+alias lsd='lsd -l'
 alias hx='helix'
+

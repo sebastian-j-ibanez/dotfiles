@@ -16,8 +16,9 @@ cd ~/dotfiles && stow .
 
 ## ⚙️ Dependencies
 ```
-stow >= 2.4
-bash >= 5.2
+stow  >= 2.4
+bash  >= 5.2
+lsd   >= 1.1
 emacs >= 29
 helix >= 24
 ```
@@ -26,15 +27,15 @@ Assuming you already have bash installed:
 
 ### Arch:
 ```
-sudo pacman -S stow emacs helix
+sudo pacman -S stow lsd emacs helix
 ```
 
 ### Debian:
 ```
-sudo apt install stow emacs helix
+sudo apt install stow lsd emacs helix
 ```
 
 ### Fedora:
 ```
-sudo dnf install stow emacs helix
+sudo dnf install stow lsd emacs helix
 ```
