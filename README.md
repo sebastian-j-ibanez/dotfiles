@@ -29,13 +29,3 @@ Assuming you already have bash installed:
 ```
 sudo pacman -S stow lsd emacs helix
 ```
-
-### Debian:
-```
-sudo apt install stow lsd emacs helix
-```
-
-### Fedora:
-```
-sudo dnf install stow lsd emacs helix
-```
