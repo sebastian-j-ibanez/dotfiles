@@ -66,8 +66,8 @@ apps are not started from a shell."
 
 ;; Load theme
 (use-package kaolin-themes)
-(use-package nord-theme)
-(load-theme 'nord)
+(use-package doom-themes)
+(load-theme 'doom-one)
 
 ;; Dashboard
 (use-package dashboard
@@ -75,7 +75,7 @@ apps are not started from a shell."
   (dashboard-setup-startup-hook)
   :custom
   ;; Logo and center content
-  (dashboard-startup-banner 2)
+  (dashboard-startup-banner 'logo)
   (dashboard-center-content t)
 
   ;; Use nerd icons
@@ -139,6 +139,9 @@ apps are not started from a shell."
 
 ;; Backups
 (setq delete-auto-save-files t)
+
+;; Dired mode
+(setq dired-listing-switches "-aBhl --group-directories-first")
 
 ;; *KEYBINDINGS & MACROS*
 
