@@ -1,4 +1,4 @@
-# 🔥 Dotfiles
+# . Dotfiles
 This repo stores several config files. Dotfiles are managed using [GNU stow](https://github.com/aspiers/stow/).
 
 ## 🔧 Setup
