@@ -66,8 +66,7 @@ apps are not started from a shell."
 
 ;; Load theme
 (use-package kaolin-themes)
-(use-package doom-themes)
-(load-theme 'doom-one)
+(load-theme 'kaolin-mono-dark)
 
 ;; Dashboard
 (use-package dashboard
@@ -75,7 +74,7 @@ apps are not started from a shell."
   (dashboard-setup-startup-hook)
   :custom
   ;; Logo and center content
-  (dashboard-startup-banner 'logo)
+  (dashboard-startup-banner 2)
   (dashboard-center-content t)
 
   ;; Use nerd icons
