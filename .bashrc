@@ -11,7 +11,7 @@ PS1='[\u@\h \W]\$ '
 
 # Custom prompt
 GIT_PS1_SHOWDIRTYSTATE='*'
-source ~/.scripts/git-prompt.sh
+source ./Scripts/git-prompt.sh
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " [%s]")'; PS1='\[\e[94;1m\]\u\[\e[0m\] \[\e[35;1m\]\w\[\e[32;1m\]${PS1_CMD1}\[\e[0m\]\n\[\e[90;1m\]󰘧 \[\e[0m\]'
 
 # Aliases
