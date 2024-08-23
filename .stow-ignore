@@ -1,0 +1,13 @@
+# Ignore Emacs files
+*~
+.#*
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Ignore KDE keybinding files
+*.kksrc
+
+# Ignore README
+README.*
