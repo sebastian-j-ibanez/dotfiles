@@ -74,7 +74,7 @@ apps are not started from a shell."
   (dashboard-setup-startup-hook)
   :custom
   ;; Logo and center content
-  (dashboard-startup-banner 2)
+  (dashboard-startup-banner 4)
   (dashboard-center-content t)
 
   ;; Use nerd icons
@@ -137,7 +137,8 @@ apps are not started from a shell."
   (nerd-icons-completion-mode))
 
 ;; Backups
-(setq delete-auto-save-files t)
+(setq make-backup-files t)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups/")))
 
 ;; Dired mode
 (setq dired-listing-switches "-aBhl --group-directories-first")
