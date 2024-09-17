@@ -62,7 +62,7 @@
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'doom-one)
+(load-theme 'leuven)
 
 ;; Dashboard
 (use-package dashboard
@@ -114,12 +114,6 @@
   (add-hook 'c++-mode-hook 'eglot-ensure)
   (add-hook 'haskell-mode-hook 'eglot-ensure)
   (add-hook 'go-mode-hook 'eglot-ensure)
-  :config
-  (setq-default eglot-workspace-configuration
-                '((haskell
-                   (plugin
-                    (stan
-                     (globalOn . :json-false))))))
   :custom
   (eglot-autoshutdown t)
   (eglot-confirm-server-initiated-edits nil))
