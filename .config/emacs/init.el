@@ -50,6 +50,22 @@
 (set-face-attribute 'fixed-pitch nil :family "FiraCode Nerd Font" :height 100)
 (set-face-attribute 'variable-pitch nil :family "FiraCode Nerd Font" :height 100)
 
+
+;; Font ligatures
+(use-package ligature)
+(ligature-set-ligatures 't '("www"))
+(ligature-set-ligatures 'prog-mode '("www" "**" "***" "**/" "*>" "*/" "\\\\" "\\\\\\" "{-" "::"
+                                     ":::" ":=" "!!" "!=" "!==" "-}" "----" "-->" "->" "->>"
+                                     "-<" "-<<" "-~" "#{" "#[" "##" "###" "####" "#(" "#?" "#_"
+                                     "#_(" ".-" ".=" ".." "..<" "..." "?=" "??" ";;" "/*" "/**"
+                                     "/=" "/==" "/>" "//" "///" "&&" "||" "||=" "|=" "|>" "^=" "$>"
+                                     "++" "+++" "+>" "=:=" "==" "===" "==>" "=>" "=>>" "<="
+                                     "=<<" "=/=" ">-" ">=" ">=>" ">>" ">>-" ">>=" ">>>" "<*"
+                                     "<*>" "<|" "<|>" "<$" "<$>" "<!--" "<-" "<--" "<->" "<+"
+                                     "<+>" "<=" "<==" "<=>" "<=<" "<>" "<<" "<<-" "<<=" "<<<"
+                                     "<~" "<~~" "</" "</>" "~@" "~-" "~>" "~~" "~~>" "%%"))
+(global-ligature-mode 't)
+
 ;; Nerd Icons
 (use-package nerd-icons)
 (use-package nerd-icons-dired)
@@ -62,7 +78,7 @@
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'leuven)
+(load-theme 'kaolin-dark)
 
 ;; Dashboard
 (use-package dashboard
