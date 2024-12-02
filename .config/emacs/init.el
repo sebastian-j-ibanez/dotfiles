@@ -78,7 +78,7 @@
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'kaolin-dark)
+(load-theme 'kaolin-bubblegum)
 
 ;; Dashboard
 (use-package dashboard
@@ -86,7 +86,7 @@
   (dashboard-setup-startup-hook)
   :custom
   ;; Logo and center content
-  (dashboard-startup-banner 2)
+  (dashboard-startup-banner 'logo)
   (dashboard-center-content t)
 
   ;; Use nerd icons
@@ -140,7 +140,7 @@
 (define-key eglot-mode-map (kbd "C-c e r") #'eglot-rename);; Nerd icons in completion window
 (use-package nerd-icons-completion
   :config
-  (nerd-icons-completion-mode))
+(nerd-icons-completion-mode))
 
 ;; Backups
 (setq make-backup-files t)
@@ -154,8 +154,20 @@
 ;; Backward/forward paragraph key binding
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
-(global-set-key (kbd "M-[") 'scroll-up-command)
-(global-set-key (kbd "M-]") 'scroll-down-command)
+
+;; Custom macros and keybindings to scroll the buffer
+(defun move-buffer-up-one-line ()
+  "Scroll the buffer content up by one line without moving the cursor."
+  (interactive)
+  (scroll-down-line 1))
+
+(defun move-buffer-down-one-line ()
+  "Scroll the buffer down one line."
+  (interactive)
+  (scroll-up-line 1))
+
+(global-set-key (kbd "M-]") 'move-buffer-up-one-line)
+(global-set-key (kbd "M-[") 'move-buffer-down-one-line)
 
 ;; Open config file macro
 (defun open-config-file ()
