@@ -15,3 +15,5 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias lsd='lsd -l --group-directories-first'
 alias gitl='git log --graph --oneline --decorate'
+
+[ -f "/home/sebas/.ghcup/env" ] && . "/home/sebas/.ghcup/env" # ghcup-env
