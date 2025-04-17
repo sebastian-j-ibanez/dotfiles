@@ -1,4 +1,6 @@
+3;; ----------------
 ;; PACKAGE MANAGEMENT
+;; ----------------
 
 ;; Set package repos
 (setq package-archives
@@ -13,7 +15,9 @@
   (package-install 'use-package))
 (eval-when-compile (require 'use-package))
 
+;; ------------
 ;; ENVIRONMENT VARIABLES
+;; ------------
 
 ;; Get PATH from shell
 (defun set-exec-path-from-shell-PATH ()
@@ -27,7 +31,9 @@
 
 (set-exec-path-from-shell-PATH)
 
+;; ------------
 ;; UI/THEMING
+;; ------------
 
 ;; Window
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -39,7 +45,7 @@
 (scroll-bar-mode -1)
 
 ;; Line numbers, Cursor
-(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (setq-default cursor-type 'bar)
 
 ;; Audible bell
@@ -49,7 +55,6 @@
 (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 100)
 (set-face-attribute 'fixed-pitch nil :family "FiraCode Nerd Font" :height 100)
 (set-face-attribute 'variable-pitch nil :family "FiraCode Nerd Font" :height 100)
-
 
 ;; Font ligatures
 (use-package ligature)
@@ -78,7 +83,7 @@
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'kaolin-bubblegum)
+(load-theme 'kaolin-mono-dark)
 
 ;; Dashboard
 (use-package dashboard
@@ -86,7 +91,7 @@
   (dashboard-setup-startup-hook)
   :custom
   ;; Logo and center content
-  (dashboard-startup-banner 'logo)
+  (dashboard-startup-banner (expand-file-name "~/.config/emacs/custom-logo.txt"))
   (dashboard-center-content t)
 
   ;; Use nerd icons
@@ -102,54 +107,9 @@
 
 (global-set-key (kbd "C-c d") 'dashboard-open)
 
-;; *LSP & LANGUAGE CONFIG*
-
-;; C, C++ config
-(setq-default c-basic-offset 4)
-
-;; Go
-(use-package go-mode)
-
-;; Haskell
-(use-package haskell-mode)
-
-;; Lisp config
-(use-package sly)
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq-default indent-tabs-mode nil)
-
-;; Eglot and company config
-(use-package company)
-(global-company-mode)
-
-(setq eldoc-echo-area-use-multiline-p nil)
-
-(use-package eglot
-  :ensure t
-  :config
-  (add-hook 'c++-mode-hook 'eglot-ensure)
-  (add-hook 'haskell-mode-hook 'eglot-ensure)
-  (add-hook 'go-mode-hook 'eglot-ensure)
-  :custom
-  (eglot-autoshutdown t)
-  (eglot-confirm-server-initiated-edits nil))
-
-(define-key eglot-mode-map (kbd "C-c <tab>") #'company-complete)
-(define-key eglot-mode-map (kbd "C-c e f n") #'flymake-goto-next-error)
-(define-key eglot-mode-map (kbd "C-c e f p") #'flymake-goto-prev-error)
-(define-key eglot-mode-map (kbd "C-c e r") #'eglot-rename);; Nerd icons in completion window
-(use-package nerd-icons-completion
-  :config
-(nerd-icons-completion-mode))
-
-;; Backups
-(setq make-backup-files t)
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups/")))
-
-;; Dired mode
-(setq dired-listing-switches "-aBhl --group-directories-first")
-
-;; *KEYBINDINGS & MACROS*
+;; --------------------
+;; KEYBINDINGS & MACROS
+;; --------------------
 
 ;; Backward/forward paragraph key binding
 (global-set-key (kbd "M-p") 'backward-paragraph)
@@ -200,3 +160,54 @@
 
 ;; Swap buffers
 (global-set-key (kbd "C-x p") 'window-swap-states)
+
+;; --------------------
+;; LSP & LANGUAGE MODE
+;; --------------------
+
+;; C, C++ config
+(setq-default c-basic-offset 4)
+
+;; Go
+(use-package go-mode)
+
+;; Haskell
+(use-package haskell-mode)
+
+;; Lisp config
+(use-package sly)
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq-default indent-tabs-mode nil)
+
+;; Eglot and company config
+(use-package company)
+(global-company-mode)
+
+(setq eldoc-echo-area-use-multiline-p nil)
+
+(use-package eglot
+  :ensure t
+  :config
+  (add-hook 'c++-mode-hook 'eglot-ensure)
+  (add-hook 'haskell-mode-hook 'eglot-ensure)
+  (add-hook 'go-mode-hook 'eglot-ensure)
+  :custom
+  (eglot-autoshutdown t)
+  (eglot-confirm-server-initiated-edits nil))
+
+(define-key eglot-mode-map (kbd "C-c <tab>") #'company-complete)
+(define-key eglot-mode-map (kbd "C-c e f n") #'flymake-goto-next-error)
+(define-key eglot-mode-map (kbd "C-c e f p") #'flymake-goto-prev-error)
+(define-key eglot-mode-map (kbd "C-c e r") #'eglot-rename);; Nerd icons in completion window
+(use-package nerd-icons-completion
+  :config
+(nerd-icons-completion-mode))
+
+;; Backups
+(setq make-backup-files t)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups/")))
+
+;; Dired mode
+(setq dired-listing-switches "-aBhl --group-directories-first")
+
+
