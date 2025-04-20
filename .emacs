@@ -7,10 +7,7 @@
  '(custom-safe-themes t)
  '(eglot-confirm-server-edits nil nil nil "Customized with use-package eglot")
  '(inhibit-startup-screen t)
- '(package-selected-packages
-   '(auctex company dashboard doom-modeline doom-themes eglot-java
-            go-mode haskell-mode kaolin-themes nerd-icons-completion
-            nerd-icons-dired sly weyland-yutani-theme)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

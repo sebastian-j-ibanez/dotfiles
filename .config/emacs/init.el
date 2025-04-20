@@ -1,4 +1,4 @@
-3;; ----------------
+;; ----------------
 ;; PACKAGE MANAGEMENT
 ;; ----------------
 
@@ -19,17 +19,10 @@
 ;; ENVIRONMENT VARIABLES
 ;; ------------
 
-;; Get PATH from shell
-(defun set-exec-path-from-shell-PATH ()
-  (interactive)
-  (let ((path-from-shell (replace-regexp-in-string
-			  "[ \t\n]*$" "" (shell-command-to-string
-					  "$SHELL --login -c 'echo $PATH'"
-						    ))))
-    (setenv "PATH" path-from-shell)
-    (setq exec-path (split-string path-from-shell path-separator))))
-
-(set-exec-path-from-shell-PATH)
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
 
 ;; ------------
 ;; UI/THEMING
@@ -37,7 +30,7 @@
 
 ;; Window
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
-(set-frame-parameter nil 'alpha-background 100)
+(set-frame-parameter nil 'alpha-background 90)
 
 ;; Bars
 (tool-bar-mode -1)
@@ -78,12 +71,13 @@
 
 ;; Mode line
 (use-package doom-modeline)
-(doom-modeline-mode 2)    
+(doom-modeline-mode 2)
+(setq doom-modeline-icon t)
 
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'kaolin-mono-dark)
+(load-theme 'doom-one)
 
 ;; Dashboard
 (use-package dashboard
@@ -107,13 +101,15 @@
 
 (global-set-key (kbd "C-c d") 'dashboard-open)
 
+;; Compilation window settings
+(setq display-buffer-alist
+      '(("\\*compilation\\*"
+         (display-buffer-reuse-window display-buffer-at-bottom)
+         (window-height . 0.3))))
+
 ;; --------------------
 ;; KEYBINDINGS & MACROS
 ;; --------------------
-
-;; Backward/forward paragraph key binding
-(global-set-key (kbd "M-p") 'backward-paragraph)
-(global-set-key (kbd "M-n") 'forward-paragraph)
 
 ;; Custom macros and keybindings to scroll the buffer
 (defun move-buffer-up-one-line ()
@@ -126,8 +122,14 @@
   (interactive)
   (scroll-up-line 1))
 
+;; Backward/forward paragraph key binding
+(global-set-key (kbd "M-p") 'backward-paragraph)
+(global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-]") 'move-buffer-up-one-line)
 (global-set-key (kbd "M-[") 'move-buffer-down-one-line)
+
+;; Compile
+(global-set-key (kbd "C-c C-x") 'compile)
 
 ;; Open config file macro
 (defun open-config-file ()
@@ -165,14 +167,16 @@
 ;; LSP & LANGUAGE MODE
 ;; --------------------
 
+;; Language modes
+(use-package go-mode)
+(use-package rust-mode)
+(use-package haskell-mode)
+
 ;; C, C++ config
 (setq-default c-basic-offset 4)
 
-;; Go
-(use-package go-mode)
-
-;; Haskell
-(use-package haskell-mode)
+;; Rust config
+(setq rust-format-on-save t)
 
 ;; Lisp config
 (use-package sly)
@@ -191,6 +195,7 @@
   (add-hook 'c++-mode-hook 'eglot-ensure)
   (add-hook 'haskell-mode-hook 'eglot-ensure)
   (add-hook 'go-mode-hook 'eglot-ensure)
+  (add-hook 'rust-mode-hook 'eglot-ensure)
   :custom
   (eglot-autoshutdown t)
   (eglot-confirm-server-initiated-edits nil))
