@@ -77,7 +77,8 @@
 ;; Load theme
 (use-package kaolin-themes)
 (use-package doom-themes)
-(load-theme 'doom-one)
+(setq catppuccin-flavor 'macchiato)
+(load-theme 'catppuccin)
 
 ;; Dashboard
 (use-package dashboard
