@@ -32,6 +32,14 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 
 export FZF_BASE=/usr/share/fzf
 
+# Source private configuration files.
+for script in .private/*; do
+  if [[ -f "$script" ]]; then
+    source "$script"
+  fi
+done
+
+
 # -----------
 # Keybindings
 # -----------
@@ -62,6 +70,7 @@ alias jctl="journalctl -p 3 -xb"
 # PATH
 # ----
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/scripts/"
 
 # ---------
 # GENERATED
