@@ -33,7 +33,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 export FZF_BASE=/usr/share/fzf
 
 # Source private configuration files.
-for script in .private/*; do
+for script in $HOME/.private/*; do
   if [[ -f "$script" ]]; then
     source "$script"
   fi
@@ -46,6 +46,7 @@ done
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^H' backward-kill-word
+bindkey "^[[3~" delete-char
 
 # ------
 # PROMPT
