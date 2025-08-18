@@ -1,0 +1,10 @@
+[user]
+	email = sebas.ibanez219@gmail.com
+	name = Sebastian Ibanez
+	signingKey = /home/sebas/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main

@@ -1,2 +1,0 @@
-#! /bin/bash
-curl -o ~/.local/bin/focus-linux -L https://github.com/focus-editor/focus/releases/latest/download/focus-linux
