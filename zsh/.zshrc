@@ -66,6 +66,7 @@ alias lsd="lsd -l --color=never"
 alias hx="helix"
 alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
 alias jctl="journalctl -p 3 -xb"
+alias aur="pacman -Qm"
 
 # ----
 # PATH
@@ -77,9 +78,7 @@ export PATH="$PATH:$HOME/scripts/"
 # GENERATED
 # ---------
 # NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /usr/share/nvm/init-nvm.sh
 
 # Cargo
 . "$HOME/.cargo/env"
@@ -92,3 +91,7 @@ export NVM_DIR="$HOME/.nvm"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/sebas/.opam/opam-init/init.zsh' ]] || source '/home/sebas/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+# Gerbil
+export PATH="$PATH:/opt/gerbil/bin/"
+export GERBIL_STD_LIB="/opt/gerbil/src/std"
