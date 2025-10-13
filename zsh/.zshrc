@@ -34,11 +34,8 @@ export FZF_BASE=/usr/share/fzf
 
 # Source private configuration files.
 for script in $HOME/.private/*; do
-  if [[ -f "$script" ]]; then
-    source "$script"
-  fi
+  [[ -f "$script" ]] && source "$script"
 done
-
 
 # -----------
 # Keybindings
@@ -74,14 +71,16 @@ alias aur="pacman -Qm"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/scripts/"
 
-# ---------
-# GENERATED
-# ---------
+# ---------------
+# LANGUAGE CONFIG
+# ---------------
 # NVM
-source /usr/share/nvm/init-nvm.sh
+nvm_file="/usr/share/nvm/init-nvm.sh"
+[[ -f $nvm_file ]] && source $nvm_file 
 
 # Cargo
-. "$HOME/.cargo/env"
+cargo_file="$HOME/.cargo/env"
+[[ -f $cargo_file ]] && source $cargo_file
 
 # Opam
 # BEGIN opam configuration
