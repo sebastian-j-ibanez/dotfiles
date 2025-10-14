@@ -2,6 +2,7 @@ theme = Horizon
 font-family = "FiraCode Nerd Font Mono"	
 font-size = 11
 cursor-style = bar
+adjust-cursor-thickness = 3
 window-width = 110
 window-height = 33
 keybind = ctrl+h=goto_split:left
