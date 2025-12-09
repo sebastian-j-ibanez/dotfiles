@@ -82,6 +82,9 @@ nvm_file="/usr/share/nvm/init-nvm.sh"
 cargo_file="$HOME/.cargo/env"
 [[ -f $cargo_file ]] && source $cargo_file
 
+# Dotnet
+export PATH="$PATH:/home/sebas/.dotnet/tools"
+
 # Opam
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
@@ -91,6 +94,21 @@ cargo_file="$HOME/.cargo/env"
 [[ ! -r '/home/sebas/.opam/opam-init/init.zsh' ]] || source '/home/sebas/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
 
-# Gerbil
+# GHCup
+[ -f "/home/sebas/.ghcup/env" ] && . "/home/sebas/.ghcup/env" # ghcup-env
+
+# Gerbil Scheme
 export PATH="$PATH:/opt/gerbil/bin/"
 export GERBIL_STD_LIB="/opt/gerbil/src/std"
+
+# ----
+# FLIP
+# ----
+export GHOSTTY_CONFIG=$HOME/.config/ghostty/config
+export GHOSTTY_DARK="Nord"
+export GHOSTTY_LIGHT="TokyoNight Day"
+export HELIX_CONFIG=$HOME/.config/helix/config.toml
+export HELIX_DARK="nord-night"
+export HELIX_LIGHT="tokyonight_day"
+
+

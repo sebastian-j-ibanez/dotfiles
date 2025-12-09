@@ -1,0 +1,21 @@
+# Base packages installed via setup.sh
+
+delve
+docker
+docker-compose
+ducker
+firefox
+ghostty
+git
+github-cli
+go
+gopls
+helix
+lsd
+rustup
+stow
+ttf-firacode-nerd
+vesktop
+yay
+zig
+zls
