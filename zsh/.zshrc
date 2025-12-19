@@ -61,6 +61,8 @@ precmd() {
 # -------
 alias lsd="lsd -l --color=never"
 alias hx="helix"
+alias rs=". ~/.local/bin/pmenu resume"
+alias pk=". ~/.local/bin/pmenu kill"
 alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
 alias jctl="journalctl -p 3 -xb"
 alias aur="pacman -Qm"
@@ -105,10 +107,10 @@ export GERBIL_STD_LIB="/opt/gerbil/src/std"
 # FLIP
 # ----
 export GHOSTTY_CONFIG=$HOME/.config/ghostty/config
-export GHOSTTY_DARK="Nord"
-export GHOSTTY_LIGHT="TokyoNight Day"
+export GHOSTTY_DARK="Atom One Dark"
+export GHOSTTY_LIGHT="Atom One Light"
 export HELIX_CONFIG=$HOME/.config/helix/config.toml
-export HELIX_DARK="nord-night"
-export HELIX_LIGHT="tokyonight_day"
+export HELIX_DARK="zed_onedark"
+export HELIX_LIGHT="zed_onelight"
 
-
+export CGO_ENABLED=1
