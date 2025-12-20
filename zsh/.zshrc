@@ -33,9 +33,12 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 export FZF_BASE=/usr/share/fzf
 
 # Source private configuration files.
-for script in $HOME/.private/*; do
-  [[ -f "$script" ]] && source "$script"
-done
+privDir="$HOME/.private/"
+if [[ -d $privDir ]]; then
+  for script in "$privDir"/*; do
+    [[ -f "$script" ]] && source "$script"
+  done
+fi
 
 # -----------
 # Keybindings

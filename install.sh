@@ -54,7 +54,7 @@ esac
 # Install packages
 mapfile -t packages < <(grep -v '^#' dependencies/base.packages | grep -v '^$')
 if confirm "[1/5] Would you like to install base packages?"; then
-  rudo pacman -S "${packages[@]}"
+  sudo pacman -S "${packages[@]}"
 fi
 
 if confirm "[2/5] Would you like to install Rust via rustup?"; then
