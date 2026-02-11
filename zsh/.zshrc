@@ -64,6 +64,7 @@ precmd() {
 # -------
 alias lsd="lsd -l --color=never"
 alias hx="helix"
+alias fx="felix"
 alias rs=". ~/.local/bin/pmenu resume"
 alias pk=". ~/.local/bin/pmenu kill"
 alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
@@ -76,11 +77,14 @@ alias aur="pacman -Qm"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/scripts/"
 
+export EDITOR="helix"
+
 # ---------------
 # LANGUAGE CONFIG
 # ---------------
 # Go
 export PATH="$PATH:$HOME/go/bin/"
+export CGO_ENABLED=1
 
 # NVM
 nvm_file="/usr/share/nvm/init-nvm.sh"
@@ -116,7 +120,6 @@ export GHOSTTY_CONFIG=$HOME/.config/ghostty/config
 export GHOSTTY_DARK="One Half Dark"
 export GHOSTTY_LIGHT="One Half Light"
 export HELIX_CONFIG=$HOME/.config/helix/config.toml
-export HELIX_DARK="zed_onedark"
+export HELIX_DARK="kaolin-dark"
 export HELIX_LIGHT="zed_onelight"
 
-export CGO_ENABLED=1

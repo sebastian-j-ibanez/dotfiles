@@ -12,6 +12,8 @@ go
 gopls
 helix
 lsd
+nodejs
+npm
 rustup
 stow
 ttf-firacode-nerd
