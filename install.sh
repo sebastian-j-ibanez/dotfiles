@@ -53,28 +53,32 @@ esac
 
 # Install packages
 mapfile -t packages < <(grep -v '^#' dependencies/base.packages | grep -v '^$')
-if confirm "[1/6] Would you like to install base packages?"; then
+if confirm "[1/7] Would you like to install base packages?"; then
   sudo pacman -S "${packages[@]}"
 fi
 
-if confirm "[2/6] Would you like to install Rust via rustup?"; then
+if confirm "[2/7] Would you like to install Rust via rustup?"; then
   ./dependencies/rustup.sh
 fi
 
-if confirm "[3/6] Would you like to install VS Code?"; then
+if confirm "[3/7] Would you like to install VS Code?"; then
   ./dependencies/vscode.sh
 fi
 
-if confirm "[4/6] Would you like to install go-git-prompt?"; then
+if confirm "[4/7] Would you like to install go-git-prompt?"; then
   ./dependencies/go-git-prompt.sh
 fi
 
-if confirm "[5/6] Would you like to install shell utilities?"; then
+if confirm "[5/7] Would you like to install shell utilities?"; then
   ./dependencies/shell-utils.sh
 fi
 
-if confirm "[6/6] Would you like to install web dev tools?"; then
+if confirm "[6/7] Would you like to install web dev tools?"; then
   ./dependencies/web-dev-tools.sh
+fi
+
+if confirm "[7/7] Would you like to install the Yerba theme for Helix and Ghostty?"; then
+  ./dependencies/yerba-theme.sh
 fi
 
 printf "\nInstall complete 🧉\n"

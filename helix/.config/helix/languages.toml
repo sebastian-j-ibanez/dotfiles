@@ -1,0 +1,140 @@
+# Rust
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+language-servers = [ "rust-analyzer" ]
+persistent-diagnostic-sources = ["rustc", "clippy"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+comment-tokens = ["//", "///", "//!"]
+block-comment-tokens = [
+    { start = "/*", end = "*/" },
+      { start = "/**", end = "*/" },
+        { start = "/*!", end = "*/" },
+]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+# Go
+[[language]]
+name = "go"
+scope = "scope.go"
+file-types = [ "go" ]
+roots = [ "go.mod" ]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "gopls" ]
+formatter = { command = "goimports" }
+
+[language-server.gopls]
+command = "gopls"
+
+# C/C++
+[[language]]
+name = "c"
+scope = "source.c"
+file-types = ["c", "h"]
+language-servers = ["clangd"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = ["cpp", "cc", "cxx", "hpp", "hxx", "hh"]
+language-servers = ["clangd"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.clangd]
+command = "clangd"
+
+# C#
+[[language]]
+name = "c-sharp"
+language-servers = ["csharp"]
+
+[language-server.csharp]
+command = "csharp-language-server"
+
+# Java
+[[language]]
+name = "java"
+language-servers = ["jdtls"]
+
+[language-server.jdtls]
+command = "jdtls"
+
+# Zig
+[[language]]
+name = "zig"
+file-types = ["zig"]
+roots = ["build.zig", "build.zig.zon"]
+scope = "source.zig"
+language-servers = [ "zls" ]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+comment-tokens = ["//", "///", "//!"]
+
+[language-server.zls]
+command = "zls"
+
+# Gleam
+[[language]]
+name = "gleam"
+scope = "source.gleam"
+file-types = ["gleam"]
+roots = ["gleam.toml"]
+language-servers = ["gleam_lsp"]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = ["//", "///"]
+block-comment-tokens = [{ start = "/*", end = "*/" }]
+
+[language-server.gleam_lsp]
+command = "gleam"
+args = ["lsp"]
+
+# Bash
+[[language]]
+name = "bash"
+language-servers = ["bash-language-server"]
+
+[language-server.bash-language-server]
+command = "bash-language-server"
+args = ["start"]
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = ["--stdin-filepath", "${INPUT}"], stdin = true }
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--stdin-filepath", "${INPUT}"], stdin = true }
+
+# Python
+[[language]]
+name = "python"
+language-servers = ["ty"]
+auto-format = true
+formatter = { command = "black", args = ["--quiet", "-"], stdin = true }
+
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
+# Haskell
+[[language]]
+name = "haskell"
+auto-format = true
+language-servers = ["haskell-language-server"]
+
+[language-server.haskell-language-server]
+command = "haskell-language-server-wrapper"
+args = ["--lsp"]
+
+[language-server.haskell-language-server.config.haskell]
+formattingProvider = "ormolu"

@@ -1,0 +1,196 @@
+# Nightfall theme for Helix
+
+# --- Syntax Highlighting ---
+
+"attribute" = "light_blue"
+"type" = "blue"
+"type.builtin" = "blue"
+"type.parameter" = "light_blue"
+"type.enum.variant" = "teal"
+"constructor" = "teal"
+
+"constant" = "light_blue"
+"constant.builtin" = "light_blue"
+"constant.character" = "light_blue"
+"constant.character.escape" = "salmon"
+"constant.numeric" = "light_blue"
+"constant.numeric.integer" = "light_blue"
+"constant.numeric.float" = "light_blue"
+
+"string" = "light_blue"
+"string.regexp" = "salmon"
+"string.special" = "salmon"
+"string.special.path" = "light_blue"
+"string.special.url" = { fg = "light_blue", underline.style = "line" }
+"string.special.symbol" = "teal"
+
+"comment" = { fg = "dim", modifiers = ["italic"] }
+"comment.line" = { fg = "dim", modifiers = ["italic"] }
+"comment.block" = { fg = "dim", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "dim", modifiers = ["italic"] }
+
+"variable" = "fg"
+"variable.builtin" = "light_blue"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "salmon"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "salmon"
+
+"keyword" = "salmon"
+"keyword.control" = "salmon"
+"keyword.control.conditional" = "salmon"
+"keyword.control.repeat" = "salmon"
+"keyword.control.import" = "salmon"
+"keyword.control.return" = "salmon"
+"keyword.control.exception" = "salmon"
+"keyword.operator" = "salmon"
+"keyword.directive" = "salmon"
+"keyword.function" = "salmon"
+"keyword.storage" = "salmon"
+"keyword.storage.type" = "salmon"
+"keyword.storage.modifier" = "salmon"
+
+"operator" = "salmon"
+
+"function" = "teal"
+"function.builtin" = "teal"
+"function.method" = "teal"
+"function.macro" = "salmon"
+"function.special" = "teal"
+
+"tag" = "salmon"
+"tag.builtin" = "salmon"
+
+"namespace" = "light_blue"
+"special" = "salmon"
+
+"markup.heading" = { fg = "salmon", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "salmon", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "salmon", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "teal", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "teal", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "light_blue", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "light_blue", modifiers = ["bold"] }
+"markup.list" = "salmon"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "light_blue", underline.style = "line" }
+"markup.link.url" = { fg = "light_blue", underline.style = "line" }
+"markup.link.label" = "light_blue"
+"markup.link.text" = "teal"
+"markup.quote" = { fg = "dim", modifiers = ["italic"] }
+"markup.raw" = "light_blue"
+"markup.raw.inline" = "light_blue"
+"markup.raw.block" = "light_blue"
+
+"diff.plus" = "teal"
+"diff.plus.gutter" = "teal"
+"diff.minus" = "salmon"
+"diff.minus.gutter" = "salmon"
+"diff.delta" = "light_blue"
+"diff.delta.gutter" = "light_blue"
+"diff.delta.moved" = "blue"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dim" }
+
+"ui.cursor" = { fg = "bg", bg = "fg" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "fg_bright" }
+"ui.cursor.select" = { fg = "bg", bg = "salmon" }
+"ui.cursor.match" = { fg = "fg_bright", bg = "bg_2", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg", bg = "fg_bright" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "fg_bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "salmon" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dim" }
+"ui.linenr.selected" = { fg = "fg" }
+
+"ui.statusline" = { fg = "fg", bg = "bg_2" }
+"ui.statusline.inactive" = { fg = "dim", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "bg", bg = "teal", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "light_blue", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "salmon", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "dim" }
+
+"ui.bufferline" = { fg = "dim", bg = "bg_1" }
+"ui.bufferline.active" = { fg = "fg_bright", bg = "bg", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_1" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "bg_2" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg_bright" }
+"ui.text.inactive" = { fg = "dim" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = { fg = "teal" }
+
+"ui.virtual" = { fg = "bg_2" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "bg_2" }
+"ui.virtual.indent-guide" = { fg = "bg_2" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "bg_2" }
+"ui.virtual.jump-label" = { fg = "salmon", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "fg", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg_bright", bg = "bg_2" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { bg = "bg_2" }
+"ui.selection.primary" = { bg = "bg_2" }
+
+"ui.highlight" = { bg = "bg_2" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "yellow" }
+"error" = { fg = "salmon" }
+"info" = { fg = "blue" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "blue", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "salmon", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+
+[palette]
+bg = "#0d1117"
+bg_1 = "#151b23"
+bg_2 = "#1f2733"
+dim = "#6e7681"
+dim_bright = "#8b949e"
+fg = "#d4dae0"
+fg_bright = "#e8eef4"
+
+salmon = "#bf5f5a"
+teal = "#23b796"
+blue = "#017faa"
+light_blue = "#7fa5c6"
+yellow = "#c9973e"

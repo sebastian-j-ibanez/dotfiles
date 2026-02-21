@@ -1,0 +1,17 @@
+# Build
+build/
+
+# Clang cache
+.cache/
+
+# Rust
+target/
+
+# Zig
+.zig-cache/
+
+# Npm
+node_modules/
+
+# Gerbil
+.gerbil/
