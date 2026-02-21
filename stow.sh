@@ -1,5 +1,8 @@
 #! /usr/bin/zsh
 
-stow -t ~ zsh
-stow -t ~ ghostty
-stow -t ~ git
+stow --adopt -t ~ zsh
+stow --adopt -t ~ ghostty
+stow --adopt -t ~ git
+stow --adopt -t ~ helix
+
+git checkout .
