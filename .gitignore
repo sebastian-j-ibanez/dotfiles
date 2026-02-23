@@ -1,1 +1,5 @@
 zsh/.private/*
+
+# Yerba theme symlinks
+helix/.config/helix/themes/yerba.toml
+ghostty/.config/ghostty/themes/yerba
