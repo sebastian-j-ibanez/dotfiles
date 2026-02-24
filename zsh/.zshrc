@@ -107,7 +107,7 @@ export PATH="$PATH:/home/sebas/.dotnet/tools"
 # END opam configuration
 
 # GHCup
-[ -f "/home/sebas/.ghcup/env" ] && . "/home/sebas/.ghcup/env" # ghcup-env
+export PATH="$HOME/.ghcup/bin:$HOME/.cabal/bin:$PATH"
 
 # Gerbil Scheme
 export PATH="$PATH:/opt/gerbil/bin/"
