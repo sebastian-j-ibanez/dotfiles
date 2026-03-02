@@ -1,0 +1,25 @@
+# LCARS OLED theme for Ghostty
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
+
+background = #100E18
+foreground = #C0B8CC
+cursor-color = #C0B8CC
+selection-background = #1C182C
+selection-foreground = #BE5EF0
+
+palette = 0=#000000
+palette = 1=#F08E5E
+palette = 2=#BE5EF0
+palette = 3=#9999FF
+palette = 4=#CCAA88
+palette = 5=#AA7799
+palette = 6=#5C5478
+palette = 7=#C0B8CC
+palette = 8=#282040
+palette = 9=#F08E5E
+palette = 10=#BE5EF0
+palette = 11=#9999FF
+palette = 12=#CCAA88
+palette = 13=#AA7799
+palette = 14=#5C5478
+palette = 15=#F4F0FA

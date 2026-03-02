@@ -1,0 +1,11 @@
+# Amber OLED theme for Helix
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
+inherits = "amber"
+
+[palette]
+bg = "#161008"
+bg_1 = "#241C12"
+dark = "#342A1C"
+dim = "#443826"
+dim_bright = "#745C3C"
+ember = "#F0A030"

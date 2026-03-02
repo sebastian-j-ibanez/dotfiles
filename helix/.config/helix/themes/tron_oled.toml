@@ -1,0 +1,12 @@
+# TRON Legacy OLED theme for Helix
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
+inherits = "tron"
+
+[palette]
+bg = "#0C1018"
+bg_1 = "#141E2E"
+dark = "#1E2E40"
+dim = "#283C50"
+dim_bright = "#446888"
+grid = "#00D4EE"
+clu = "#EE6200"

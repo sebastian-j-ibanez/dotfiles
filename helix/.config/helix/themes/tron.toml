@@ -1,0 +1,200 @@
+# TRON Legacy theme for Helix
+# The Grid — deep black void, cyan light lines, orange identity discs.
+
+# --- Syntax Highlighting ---
+
+"attribute" = "slate"
+
+"type" = "fg"
+"type.builtin" = "ice"
+"type.parameter" = "fg"
+"type.enum.variant" = "ice"
+"constructor" = "flux"
+
+"constant" = "fg"
+"constant.builtin" = "fg"
+"constant.character" = "slate"
+"constant.character.escape" = "ice"
+"constant.numeric" = "ice"
+"constant.numeric.integer" = "ice"
+"constant.numeric.float" = "ice"
+
+"string" = "slate"
+"string.regexp" = "grid"
+"string.special" = "clu"
+"string.special.path" = "slate"
+"string.special.url" = { fg = "slate", underline.style = "line" }
+"string.special.symbol" = "fg"
+
+"comment" = "dim_bright"
+"comment.line" = "dim_bright"
+"comment.block" = "dim_bright"
+"comment.block.documentation" = "dim_bright"
+
+"variable" = "fg"
+"variable.builtin" = "grid"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "flux"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "clu"
+"keyword.control" = "clu"
+"keyword.control.conditional" = "clu"
+"keyword.control.repeat" = "clu"
+"keyword.control.import" = "clu"
+"keyword.control.return" = "clu"
+"keyword.control.exception" = "clu"
+"keyword.operator" = "clu"
+"keyword.directive" = "ice"
+"keyword.function" = "clu"
+"keyword.storage" = "clu"
+"keyword.storage.type" = "clu"
+"keyword.storage.modifier" = "clu"
+
+"operator" = "flux"
+"special" = "flux"
+
+"function" = "grid"
+"function.builtin" = "grid"
+"function.method" = "grid"
+"function.macro" = "clu"
+"function.special" = "grid"
+
+"tag" = "flux"
+"tag.builtin" = "flux"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "fg"
+"markup.heading.1" = "grid"
+"markup.heading.2" = "grid"
+"markup.heading.3" = "fg"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "clu"
+"markup.bold" = "fg"
+"markup.italic" = "fg"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "slate", underline.style = "line" }
+"markup.link.url" = { fg = "slate", underline.style = "line" }
+"markup.link.label" = "slate"
+"markup.link.text" = "grid"
+"markup.quote" = "dim_bright"
+"markup.raw" = "flux"
+"markup.raw.inline" = "flux"
+"markup.raw.block" = "flux"
+
+"diff.plus" = "grid"
+"diff.plus.gutter" = "grid"
+"diff.minus" = "clu"
+"diff.minus.gutter" = "clu"
+"diff.delta" = "ice"
+"diff.delta.gutter" = "ice"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "grid" }
+"ui.cursor.match" = { fg = "black", bg = "grid" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "grid" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "grid" }
+
+"ui.statusline" = { fg = "fg", bg = "dark" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "fg", bg = "dark" }
+"ui.statusline.insert" = { fg = "black", bg = "ice" }
+"ui.statusline.select" = { fg = "black", bg = "clu" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "grid"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = "clu"
+
+"ui.menu" = { fg = "grid", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { fg = "grid", bg = "bg_1" }
+"ui.selection.primary" = { fg = "grid", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "flux" }
+"error" = { fg = "clu" }
+"info" = { fg = "ice" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "ice", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "flux", style = "curl" } }
+"diagnostic.error" = { underline = { color = "clu", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# The Grid — black void, cyan light, orange heat
+
+[palette]
+black = "#000000"
+bg = "#06080C"
+bg_1 = "#0E1420"
+dark = "#162030"
+dim = "#203040"
+dim_bright = "#406080"
+fg = "#88C0D8"
+bright = "#B0E0F0"
+white = "#E0F8FF"
+
+grid = "#00E5FF"
+clu = "#FF6A00"
+ice = "#60B8D8"
+flux = "#4A90A8"
+slate = "#7898A8"

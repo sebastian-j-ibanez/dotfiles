@@ -1,0 +1,200 @@
+# Phosphor theme for Helix
+# Retro CRT green inspired by DOS, The Matrix, and Alien Isolation terminals.
+
+# --- Syntax Highlighting ---
+
+"attribute" = "oxide"
+
+"type" = "fg"
+"type.builtin" = "ash"
+"type.parameter" = "fg"
+"type.enum.variant" = "ash"
+"constructor" = "circuit"
+
+"constant" = "fg"
+"constant.builtin" = "fg"
+"constant.character" = "oxide"
+"constant.character.escape" = "ash"
+"constant.numeric" = "ash"
+"constant.numeric.integer" = "ash"
+"constant.numeric.float" = "ash"
+
+"string" = "oxide"
+"string.regexp" = "terminal"
+"string.special" = "phosphor"
+"string.special.path" = "oxide"
+"string.special.url" = { fg = "oxide", underline.style = "line" }
+"string.special.symbol" = "fg"
+
+"comment" = "dim_bright"
+"comment.line" = "dim_bright"
+"comment.block" = "dim_bright"
+"comment.block.documentation" = "dim_bright"
+
+"variable" = "fg"
+"variable.builtin" = "terminal"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "circuit"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "phosphor"
+"keyword.control" = "phosphor"
+"keyword.control.conditional" = "phosphor"
+"keyword.control.repeat" = "phosphor"
+"keyword.control.import" = "phosphor"
+"keyword.control.return" = "phosphor"
+"keyword.control.exception" = "phosphor"
+"keyword.operator" = "phosphor"
+"keyword.directive" = "ash"
+"keyword.function" = "phosphor"
+"keyword.storage" = "phosphor"
+"keyword.storage.type" = "phosphor"
+"keyword.storage.modifier" = "phosphor"
+
+"operator" = "circuit"
+"special" = "circuit"
+
+"function" = "terminal"
+"function.builtin" = "terminal"
+"function.method" = "terminal"
+"function.macro" = "phosphor"
+"function.special" = "terminal"
+
+"tag" = "circuit"
+"tag.builtin" = "circuit"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "fg"
+"markup.heading.1" = "terminal"
+"markup.heading.2" = "terminal"
+"markup.heading.3" = "fg"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "phosphor"
+"markup.bold" = "fg"
+"markup.italic" = "fg"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "oxide", underline.style = "line" }
+"markup.link.url" = { fg = "oxide", underline.style = "line" }
+"markup.link.label" = "oxide"
+"markup.link.text" = "terminal"
+"markup.quote" = "dim_bright"
+"markup.raw" = "circuit"
+"markup.raw.inline" = "circuit"
+"markup.raw.block" = "circuit"
+
+"diff.plus" = "terminal"
+"diff.plus.gutter" = "terminal"
+"diff.minus" = "phosphor"
+"diff.minus.gutter" = "phosphor"
+"diff.delta" = "ash"
+"diff.delta.gutter" = "ash"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "terminal" }
+"ui.cursor.match" = { fg = "black", bg = "terminal" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "terminal" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "terminal" }
+
+"ui.statusline" = { fg = "fg", bg = "dark" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "fg", bg = "dark" }
+"ui.statusline.insert" = { fg = "black", bg = "ash" }
+"ui.statusline.select" = { fg = "black", bg = "phosphor" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "terminal"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = "phosphor"
+
+"ui.menu" = { fg = "terminal", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { fg = "terminal", bg = "bg_1" }
+"ui.selection.primary" = { fg = "terminal", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "circuit" }
+"error" = { fg = "phosphor" }
+"info" = { fg = "ash" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "ash", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "circuit", style = "curl" } }
+"diagnostic.error" = { underline = { color = "phosphor", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# CRT phosphor greens — darkest to lightest, plus five green accents
+
+[palette]
+black = "#000000"
+bg = "#0A0E0A"
+bg_1 = "#121E12"
+dark = "#1C2E1C"
+dim = "#283E28"
+dim_bright = "#4A7050"
+fg = "#7CB87C"
+bright = "#A0D8A0"
+white = "#C8FFC8"
+
+phosphor = "#33FF33"
+terminal = "#5AAA5A"
+oxide = "#8A9A6A"
+circuit = "#5A9A78"
+ash = "#7A9088"

@@ -1,0 +1,200 @@
+# LCARS theme for Helix
+# Star Trek computer panels — peach, violet, and periwinkle on dark.
+
+# --- Syntax Highlighting ---
+
+"attribute" = "tan"
+
+"type" = "fg"
+"type.builtin" = "periwinkle"
+"type.parameter" = "fg"
+"type.enum.variant" = "periwinkle"
+"constructor" = "mauve"
+
+"constant" = "fg"
+"constant.builtin" = "fg"
+"constant.character" = "tan"
+"constant.character.escape" = "periwinkle"
+"constant.numeric" = "periwinkle"
+"constant.numeric.integer" = "periwinkle"
+"constant.numeric.float" = "periwinkle"
+
+"string" = "tan"
+"string.regexp" = "violet"
+"string.special" = "peach"
+"string.special.path" = "tan"
+"string.special.url" = { fg = "tan", underline.style = "line" }
+"string.special.symbol" = "fg"
+
+"comment" = "dim_bright"
+"comment.line" = "dim_bright"
+"comment.block" = "dim_bright"
+"comment.block.documentation" = "dim_bright"
+
+"variable" = "fg"
+"variable.builtin" = "violet"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "mauve"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "peach"
+"keyword.control" = "peach"
+"keyword.control.conditional" = "peach"
+"keyword.control.repeat" = "peach"
+"keyword.control.import" = "peach"
+"keyword.control.return" = "peach"
+"keyword.control.exception" = "peach"
+"keyword.operator" = "peach"
+"keyword.directive" = "periwinkle"
+"keyword.function" = "peach"
+"keyword.storage" = "peach"
+"keyword.storage.type" = "peach"
+"keyword.storage.modifier" = "peach"
+
+"operator" = "mauve"
+"special" = "mauve"
+
+"function" = "violet"
+"function.builtin" = "violet"
+"function.method" = "violet"
+"function.macro" = "peach"
+"function.special" = "violet"
+
+"tag" = "mauve"
+"tag.builtin" = "mauve"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "fg"
+"markup.heading.1" = "violet"
+"markup.heading.2" = "violet"
+"markup.heading.3" = "fg"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "peach"
+"markup.bold" = "fg"
+"markup.italic" = "fg"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "tan", underline.style = "line" }
+"markup.link.url" = { fg = "tan", underline.style = "line" }
+"markup.link.label" = "tan"
+"markup.link.text" = "violet"
+"markup.quote" = "dim_bright"
+"markup.raw" = "mauve"
+"markup.raw.inline" = "mauve"
+"markup.raw.block" = "mauve"
+
+"diff.plus" = "violet"
+"diff.plus.gutter" = "violet"
+"diff.minus" = "peach"
+"diff.minus.gutter" = "peach"
+"diff.delta" = "periwinkle"
+"diff.delta.gutter" = "periwinkle"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "violet" }
+"ui.cursor.match" = { fg = "black", bg = "violet" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "violet" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "violet" }
+
+"ui.statusline" = { fg = "fg", bg = "dark" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "fg", bg = "dark" }
+"ui.statusline.insert" = { fg = "black", bg = "periwinkle" }
+"ui.statusline.select" = { fg = "black", bg = "peach" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "violet"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = "peach"
+
+"ui.menu" = { fg = "violet", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { fg = "violet", bg = "bg_1" }
+"ui.selection.primary" = { fg = "violet", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "mauve" }
+"error" = { fg = "peach" }
+"info" = { fg = "periwinkle" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "periwinkle", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "mauve", style = "curl" } }
+"diagnostic.error" = { underline = { color = "peach", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# LCARS panels — peach, violet, periwinkle on deep space black
+
+[palette]
+black = "#000000"
+bg = "#08060E"
+bg_1 = "#141020"
+dark = "#201830"
+dim = "#2C2240"
+dim_bright = "#585070"
+fg = "#C0B8CC"
+bright = "#DCD4E4"
+white = "#F4F0FA"
+
+peach = "#FF9966"
+violet = "#CC66FF"
+periwinkle = "#9999FF"
+tan = "#CCAA88"
+mauve = "#AA7799"

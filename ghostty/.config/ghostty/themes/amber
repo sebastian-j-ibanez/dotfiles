@@ -1,0 +1,25 @@
+# Amber theme for Ghostty
+# Retro CRT amber inspired by DOS, monochrome monitors, and Alien Isolation terminals.
+
+background = #0E0A06
+foreground = #B89868
+cursor-color = #B89868
+selection-background = #1E1610
+selection-foreground = #AA8040
+
+palette = 0=#000000
+palette = 1=#FFAA33
+palette = 2=#AA8040
+palette = 3=#AA7838
+palette = 4=#908070
+palette = 5=#9A8A60
+palette = 6=#705838
+palette = 7=#B89868
+palette = 8=#2E2418
+palette = 9=#FFAA33
+palette = 10=#AA8040
+palette = 11=#AA7838
+palette = 12=#908070
+palette = 13=#9A8A60
+palette = 14=#705838
+palette = 15=#FFE8C8

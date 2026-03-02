@@ -1,0 +1,25 @@
+# LCARS theme for Ghostty
+# Star Trek computer panels — peach, violet, and periwinkle on dark.
+
+background = #08060E
+foreground = #C0B8CC
+cursor-color = #C0B8CC
+selection-background = #141020
+selection-foreground = #CC66FF
+
+palette = 0=#000000
+palette = 1=#FF9966
+palette = 2=#CC66FF
+palette = 3=#9999FF
+palette = 4=#CCAA88
+palette = 5=#AA7799
+palette = 6=#585070
+palette = 7=#C0B8CC
+palette = 8=#201830
+palette = 9=#FF9966
+palette = 10=#CC66FF
+palette = 11=#9999FF
+palette = 12=#CCAA88
+palette = 13=#AA7799
+palette = 14=#585070
+palette = 15=#F4F0FA

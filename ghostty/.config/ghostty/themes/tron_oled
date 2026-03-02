@@ -1,0 +1,25 @@
+# TRON Legacy OLED theme for Ghostty
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
+
+background = #0C1018
+foreground = #88C0D8
+cursor-color = #88C0D8
+selection-background = #141E2E
+selection-foreground = #00D4EE
+
+palette = 0=#000000
+palette = 1=#00D4EE
+palette = 2=#EE6200
+palette = 3=#60B8D8
+palette = 4=#4A90A8
+palette = 5=#7898A8
+palette = 6=#446888
+palette = 7=#88C0D8
+palette = 8=#1E2E40
+palette = 9=#00D4EE
+palette = 10=#EE6200
+palette = 11=#60B8D8
+palette = 12=#4A90A8
+palette = 13=#7898A8
+palette = 14=#446888
+palette = 15=#E0F8FF

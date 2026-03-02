@@ -1,0 +1,25 @@
+# Amber OLED theme for Ghostty
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
+
+background = #161008
+foreground = #B89868
+cursor-color = #B89868
+selection-background = #241C12
+selection-foreground = #AA8040
+
+palette = 0=#000000
+palette = 1=#F0A030
+palette = 2=#AA8040
+palette = 3=#AA7838
+palette = 4=#908070
+palette = 5=#9A8A60
+palette = 6=#745C3C
+palette = 7=#B89868
+palette = 8=#342A1C
+palette = 9=#F0A030
+palette = 10=#AA8040
+palette = 11=#AA7838
+palette = 12=#908070
+palette = 13=#9A8A60
+palette = 14=#745C3C
+palette = 15=#FFE8C8
