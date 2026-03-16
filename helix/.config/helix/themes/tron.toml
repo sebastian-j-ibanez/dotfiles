@@ -1,5 +1,5 @@
-# TRON Legacy theme for Helix
-# The Grid — deep black void, cyan light lines, orange identity discs.
+# TRON Legacy OLED theme for Helix
+# The Grid — true black void, teal light lines, electric rose identity discs.
 
 # --- Syntax Highlighting ---
 
@@ -180,21 +180,21 @@
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 # --- Palette ---
-# The Grid — black void, cyan light, orange heat
+# The Grid — deep black void, cyan light lines, burnt orange identity discs.
 
 [palette]
 black = "#000000"
-bg = "#06080C"
-bg_1 = "#0E1420"
-dark = "#162030"
-dim = "#203040"
-dim_bright = "#406080"
+bg = "#0C1018"
+bg_1 = "#141E2E"
+dark = "#1E2E40"
+dim = "#283C50"
+dim_bright = "#446888"
 fg = "#88C0D8"
 bright = "#B0E0F0"
 white = "#E0F8FF"
 
-grid = "#00E5FF"
-clu = "#FF6A00"
+grid = "#00D4EE"
+clu = "#CC7A3A"
 ice = "#60B8D8"
 flux = "#4A90A8"
 slate = "#7898A8"

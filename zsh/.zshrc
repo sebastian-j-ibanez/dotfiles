@@ -117,9 +117,10 @@ export GERBIL_STD_LIB="/opt/gerbil/src/std"
 # FLIP
 # ----
 export GHOSTTY_CONFIG=$HOME/.config/ghostty/config
-export GHOSTTY_DARK="Forest Blue"
+# export GHOSTTY_DARK="Forest Blue"
+export GHOSTTY_DARK="tron"
 export GHOSTTY_LIGHT="One Half Light"
 export HELIX_CONFIG=$HOME/.config/helix/config.toml
-export HELIX_DARK="kaolin-dark"
+export HELIX_DARK="tron"
 export HELIX_LIGHT="zed_onelight"
 

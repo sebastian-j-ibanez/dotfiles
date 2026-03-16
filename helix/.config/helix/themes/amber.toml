@@ -1,5 +1,6 @@
 # Amber theme for Helix
 # Retro CRT amber inspired by DOS, monochrome monitors, and Alien Isolation terminals.
+# OLED-optimized variant — lifted backgrounds for per-pixel displays.
 
 # --- Syntax Highlighting ---
 
@@ -184,16 +185,16 @@
 
 [palette]
 black = "#000000"
-bg = "#0E0A06"
-bg_1 = "#1E1610"
-dark = "#2E2418"
-dim = "#3E3020"
-dim_bright = "#705838"
+bg = "#161008"
+bg_1 = "#241C12"
+dark = "#342A1C"
+dim = "#443826"
+dim_bright = "#745C3C"
 fg = "#B89868"
 bright = "#D8B888"
 white = "#FFE8C8"
 
-ember = "#FFAA33"
+ember = "#F0A030"
 amber = "#AA8040"
 wheat = "#9A8A60"
 copper = "#AA7838"
