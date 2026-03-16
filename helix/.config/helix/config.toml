@@ -1,4 +1,4 @@
-theme = "phosphor_oled"
+theme = "tron"
 
 [editor]
 line-number = "relative" 
