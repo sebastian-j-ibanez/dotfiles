@@ -1,26 +1,26 @@
-# TRON theme for Helix
+# Aurora theme for Helix.
 
 # --- Syntax Highlighting ---
 
-"attribute" = "slate"
+"attribute" = "mist"
 
 "type" = "fg"
-"type.builtin" = "ice"
+"type.builtin" = "lavender"
 "type.parameter" = "fg"
-"type.enum.variant" = "ice"
-"constructor" = "flux"
+"type.enum.variant" = "lavender"
+"constructor" = "periwinkle"
 
 "constant" = "fg"
 "constant.builtin" = "fg"
 "constant.character" = "slate"
-"constant.character.escape" = "ice"
-"constant.numeric" = "ice"
-"constant.numeric.integer" = "ice"
-"constant.numeric.float" = "ice"
+"constant.character.escape" = "lavender"
+"constant.numeric" = "slate"
+"constant.numeric.integer" = "slate"
+"constant.numeric.float" = "slate"
 
 "string" = "slate"
-"string.regexp" = "grid"
-"string.special" = "clu"
+"string.regexp" = "teal"
+"string.special" = "periwinkle"
 "string.special.path" = "slate"
 "string.special.url" = { fg = "slate", underline.style = "line" }
 "string.special.symbol" = "fg"
@@ -31,71 +31,71 @@
 "comment.block.documentation" = "dim_bright"
 
 "variable" = "fg"
-"variable.builtin" = "grid"
+"variable.builtin" = "teal"
 "variable.parameter" = "fg"
 "variable.other.member" = "fg"
 
-"label" = "flux"
+"label" = "periwinkle"
 
 "punctuation" = "dim_bright"
 "punctuation.delimiter" = "dim_bright"
 "punctuation.bracket" = "dim_bright"
 "punctuation.special" = "fg"
 
-"keyword" = "clu"
-"keyword.control" = "clu"
-"keyword.control.conditional" = "clu"
-"keyword.control.repeat" = "clu"
-"keyword.control.import" = "clu"
-"keyword.control.return" = "clu"
-"keyword.control.exception" = "clu"
-"keyword.operator" = "clu"
-"keyword.directive" = "ice"
-"keyword.function" = "clu"
-"keyword.storage" = "clu"
-"keyword.storage.type" = "clu"
-"keyword.storage.modifier" = "clu"
+"keyword" = "periwinkle"
+"keyword.control" = "periwinkle"
+"keyword.control.conditional" = "periwinkle"
+"keyword.control.repeat" = "periwinkle"
+"keyword.control.import" = "periwinkle"
+"keyword.control.return" = "periwinkle"
+"keyword.control.exception" = "periwinkle"
+"keyword.operator" = "periwinkle"
+"keyword.directive" = "lavender"
+"keyword.function" = "periwinkle"
+"keyword.storage" = "periwinkle"
+"keyword.storage.type" = "periwinkle"
+"keyword.storage.modifier" = "periwinkle"
 
-"operator" = "flux"
-"special" = "flux"
+"operator" = "mist"
+"special" = "mist"
 
-"function" = "grid"
-"function.builtin" = "grid"
-"function.method" = "grid"
-"function.macro" = "clu"
-"function.special" = "grid"
+"function" = "teal"
+"function.builtin" = "teal"
+"function.method" = "teal"
+"function.macro" = "periwinkle"
+"function.special" = "teal"
 
-"tag" = "flux"
-"tag.builtin" = "flux"
+"tag" = "lavender"
+"tag.builtin" = "lavender"
 
 "namespace" = "dim_bright"
 
 "markup.heading" = "fg"
-"markup.heading.1" = "grid"
-"markup.heading.2" = "grid"
+"markup.heading.1" = "lavender"
+"markup.heading.2" = "teal"
 "markup.heading.3" = "fg"
 "markup.heading.4" = "fg"
 "markup.heading.5" = "dim_bright"
 "markup.heading.6" = "dim_bright"
-"markup.list" = "clu"
+"markup.list" = "periwinkle"
 "markup.bold" = "fg"
 "markup.italic" = "fg"
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.link" = { fg = "slate", underline.style = "line" }
 "markup.link.url" = { fg = "slate", underline.style = "line" }
 "markup.link.label" = "slate"
-"markup.link.text" = "grid"
+"markup.link.text" = "teal"
 "markup.quote" = "dim_bright"
-"markup.raw" = "flux"
-"markup.raw.inline" = "flux"
-"markup.raw.block" = "flux"
+"markup.raw" = "mist"
+"markup.raw.inline" = "mist"
+"markup.raw.block" = "mist"
 
-"diff.plus" = "grid"
-"diff.plus.gutter" = "grid"
-"diff.minus" = "clu"
-"diff.minus.gutter" = "clu"
-"diff.delta" = "ice"
-"diff.delta.gutter" = "ice"
+"diff.plus" = "teal"
+"diff.plus.gutter" = "teal"
+"diff.minus" = "periwinkle"
+"diff.minus.gutter" = "periwinkle"
+"diff.delta" = "lavender"
+"diff.delta.gutter" = "lavender"
 
 # --- UI Elements ---
 
@@ -105,24 +105,24 @@
 "ui.cursor" = { fg = "bg", bg = "white" }
 "ui.cursor.normal" = { fg = "bg", bg = "fg" }
 "ui.cursor.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.select" = { fg = "bg", bg = "grid" }
-"ui.cursor.match" = { fg = "black", bg = "grid" }
+"ui.cursor.select" = { fg = "bg", bg = "teal" }
+"ui.cursor.match" = { fg = "black", bg = "teal" }
 "ui.cursor.primary" = { fg = "bg", bg = "white" }
 "ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
 "ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.primary.select" = { fg = "bg", bg = "grid" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "teal" }
 
 "ui.gutter" = { bg = "bg" }
 "ui.gutter.selected" = { bg = "bg_1" }
 
 "ui.linenr" = { fg = "dark" }
-"ui.linenr.selected" = { fg = "grid" }
+"ui.linenr.selected" = { fg = "lavender" }
 
 "ui.statusline" = { fg = "fg", bg = "dark" }
 "ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
 "ui.statusline.normal" = { fg = "fg", bg = "dark" }
-"ui.statusline.insert" = { fg = "black", bg = "ice" }
-"ui.statusline.select" = { fg = "black", bg = "clu" }
+"ui.statusline.insert" = { fg = "black", bg = "teal" }
+"ui.statusline.select" = { fg = "black", bg = "lavender" }
 "ui.statusline.separator" = { fg = "dark" }
 
 "ui.bufferline" = { fg = "dim_bright", bg = "bg" }
@@ -139,7 +139,7 @@
 "ui.text.focus" = { fg = "bright" }
 "ui.text.inactive" = { fg = "dim_bright" }
 "ui.text.info" = { fg = "fg" }
-"ui.text.directory" = "grid"
+"ui.text.directory" = "teal"
 
 "ui.virtual" = { fg = "dark" }
 "ui.virtual.ruler" = { bg = "bg_1" }
@@ -149,14 +149,14 @@
 "ui.virtual.inlay-hint.parameter" = { fg = "dim" }
 "ui.virtual.inlay-hint.type" = { fg = "dim" }
 "ui.virtual.wrap" = { fg = "dark" }
-"ui.virtual.jump-label" = "clu"
+"ui.virtual.jump-label" = "lavender"
 
-"ui.menu" = { fg = "grid", bg = "bg_1" }
+"ui.menu" = { fg = "teal", bg = "bg_1" }
 "ui.menu.selected" = { fg = "fg", bg = "bg_1" }
 "ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
 
-"ui.selection" = { fg = "grid", bg = "bg_1" }
-"ui.selection.primary" = { fg = "grid", bg = "bg_1" }
+"ui.selection" = { fg = "teal", bg = "bg_1" }
+"ui.selection.primary" = { fg = "teal", bg = "bg_1" }
 
 "ui.highlight" = { bg = "bg_1" }
 "ui.highlight.frameline" = { bg = "bg_1" }
@@ -166,34 +166,34 @@
 "ui.cursorcolumn.primary" = { bg = "bg_1" }
 "ui.cursorcolumn.secondary" = { bg = "bg_1" }
 
-"warning" = { fg = "flux" }
-"error" = { fg = "clu" }
-"info" = { fg = "ice" }
+"warning" = { fg = "slate" }
+"error" = { fg = "periwinkle" }
+"info" = { fg = "teal" }
 "hint" = { fg = "dim" }
 
 "diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "ice", style = "dotted" } }
-"diagnostic.warning" = { underline = { color = "flux", style = "curl" } }
-"diagnostic.error" = { underline = { color = "clu", style = "curl" } }
+"diagnostic.info" = { underline = { color = "teal", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "slate", style = "curl" } }
+"diagnostic.error" = { underline = { color = "periwinkle", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 # --- Palette ---
-# The Grid — deep black void, cyan light lines, burnt orange identity discs.
+# Deep blue-black sky, cool blue-grey text, lavender and teal as the only warmth.
 
 [palette]
 black = "#000000"
-bg = "#0C1018"
-bg_1 = "#141E2E"
-dark = "#1E2E40"
-dim = "#283C50"
-dim_bright = "#446888"
-fg = "#88C0D8"
-bright = "#B0E0F0"
-white = "#E0F8FF"
+bg = "#0D1120"
+bg_1 = "#131928"
+dark = "#1A2235"
+dim = "#263045"
+dim_bright = "#485E72"
+fg = "#B8C8D8"
+bright = "#D0DDE8"
+white = "#E8F2FA"
 
-grid = "#00D4EE"
-clu = "#CC7A3A"
-ice = "#60B8D8"
-flux = "#4A90A8"
-slate = "#7898A8"
+lavender = "#A48FD4"
+teal = "#3DBFAA"
+periwinkle = "#6878B0"
+slate = "#6888A0"
+mist = "#5A7888"

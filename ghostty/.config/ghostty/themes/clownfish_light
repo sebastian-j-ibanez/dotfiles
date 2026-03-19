@@ -1,0 +1,24 @@
+# Clownfish Light theme for Ghostty
+
+background = #F0F5F3
+foreground = #243830
+cursor-color = #243830
+selection-background = #DDE8E4
+selection-foreground = #2A8C7C
+
+palette = 0=#FFFFFF
+palette = 1=#C05818
+palette = 2=#2A8C7C
+palette = 3=#8C7050
+palette = 4=#9A6830
+palette = 5=#4A7080
+palette = 6=#8098A0
+palette = 7=#243830
+palette = 8=#C8D8D2
+palette = 9=#C05818
+palette = 10=#2A8C7C
+palette = 11=#8C7050
+palette = 12=#9A6830
+palette = 13=#4A7080
+palette = 14=#8098A0
+palette = 15=#000000

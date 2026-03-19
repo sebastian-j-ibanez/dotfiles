@@ -1,0 +1,198 @@
+# Clownfish Light theme for Helix
+
+# --- Syntax Highlighting ---
+
+"attribute" = "sand"
+
+"type" = "fg"
+"type.builtin" = "steel"
+"type.parameter" = "fg"
+"type.enum.variant" = "steel"
+"constructor" = "copper"
+
+"constant" = "fg"
+"constant.builtin" = "fg"
+"constant.character" = "sand"
+"constant.character.escape" = "steel"
+"constant.numeric" = "steel"
+"constant.numeric.integer" = "steel"
+"constant.numeric.float" = "steel"
+
+"string" = "sand"
+"string.regexp" = "teal"
+"string.special" = "orange"
+"string.special.path" = "sand"
+"string.special.url" = { fg = "sand", underline.style = "line" }
+"string.special.symbol" = "fg"
+
+"comment" = "dim_bright"
+"comment.line" = "dim_bright"
+"comment.block" = "dim_bright"
+"comment.block.documentation" = "dim_bright"
+
+"variable" = "fg"
+"variable.builtin" = "teal"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "copper"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "orange"
+"keyword.control" = "orange"
+"keyword.control.conditional" = "orange"
+"keyword.control.repeat" = "orange"
+"keyword.control.import" = "orange"
+"keyword.control.return" = "orange"
+"keyword.control.exception" = "orange"
+"keyword.operator" = "orange"
+"keyword.directive" = "steel"
+"keyword.function" = "orange"
+"keyword.storage" = "orange"
+"keyword.storage.type" = "orange"
+"keyword.storage.modifier" = "orange"
+
+"operator" = "copper"
+"special" = "copper"
+
+"function" = "teal"
+"function.builtin" = "teal"
+"function.method" = "teal"
+"function.macro" = "orange"
+"function.special" = "teal"
+
+"tag" = "copper"
+"tag.builtin" = "copper"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "fg"
+"markup.heading.1" = "teal"
+"markup.heading.2" = "teal"
+"markup.heading.3" = "fg"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "orange"
+"markup.bold" = "fg"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "sand", underline.style = "line" }
+"markup.link.url" = { fg = "sand", underline.style = "line" }
+"markup.link.label" = "sand"
+"markup.link.text" = "teal"
+"markup.quote" = "dim_bright"
+"markup.raw" = "copper"
+"markup.raw.inline" = "copper"
+"markup.raw.block" = "copper"
+
+"diff.plus" = "teal"
+"diff.plus.gutter" = "teal"
+"diff.minus" = "orange"
+"diff.minus.gutter" = "orange"
+"diff.delta" = "steel"
+"diff.delta.gutter" = "steel"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "bright" }
+
+"ui.cursor" = { fg = "white", bg = "black" }
+"ui.cursor.normal" = { fg = "white", bg = "fg" }
+"ui.cursor.insert" = { fg = "white", bg = "dim" }
+"ui.cursor.select" = { fg = "white", bg = "teal" }
+"ui.cursor.match" = { fg = "white", bg = "teal" }
+"ui.cursor.primary" = { fg = "white", bg = "black" }
+"ui.cursor.primary.normal" = { fg = "white", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "white", bg = "dim" }
+"ui.cursor.primary.select" = { fg = "white", bg = "teal" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "bright" }
+"ui.linenr.selected" = { fg = "teal" }
+
+"ui.statusline" = { fg = "fg", bg = "bright" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "fg", bg = "bright" }
+"ui.statusline.insert" = { fg = "white", bg = "steel" }
+"ui.statusline.select" = { fg = "white", bg = "orange" }
+"ui.statusline.separator" = { fg = "bright" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "bright" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "dim" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "teal"
+
+"ui.virtual" = { fg = "bright" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "bright" }
+"ui.virtual.indent-guide" = { fg = "bright" }
+"ui.virtual.inlay-hint" = { fg = "dim_bright" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim_bright" }
+"ui.virtual.inlay-hint.type" = { fg = "dim_bright" }
+"ui.virtual.wrap" = { fg = "bright" }
+"ui.virtual.jump-label" = "orange"
+
+"ui.menu" = { fg = "teal", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim_bright", bg = "bg_1" }
+
+"ui.selection" = { fg = "teal", bg = "bg_1" }
+"ui.selection.primary" = { fg = "teal", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "copper" }
+"error" = { fg = "orange" }
+"info" = { fg = "steel" }
+"hint" = { fg = "dim_bright" }
+
+"diagnostic.hint" = { underline = { color = "dim_bright", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "steel", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "copper", style = "curl" } }
+"diagnostic.error" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# Greys from lightest to darkest, plus five accents
+
+[palette]
+white = "#FFFFFF"
+bg = "#F0F5F3"
+bg_1 = "#DDE8E4"
+bright = "#C8D8D2"
+dim_bright = "#8098A0"
+dim = "#587880"
+fg = "#243830"
+dark = "#162820"
+black = "#000000"
+
+teal = "#2A8C7C"
+orange = "#C05818"
+sand = "#8C7050"
+copper = "#9A6830"
+steel = "#4A7080"

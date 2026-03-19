@@ -1,0 +1,24 @@
+# Nightfall theme for Ghostty
+
+background = #0d1117
+foreground = #d4dae0
+cursor-color = #d4dae0
+selection-background = #151b23
+selection-foreground = #23b796
+
+palette = 0=#000000
+palette = 1=#bf5f5a
+palette = 2=#23b796
+palette = 3=#c9973e
+palette = 4=#A48FD4
+palette = 5=#7fa5c6
+palette = 6=#6e7681
+palette = 7=#d4dae0
+palette = 8=#1f2733
+palette = 9=#bf5f5a
+palette = 10=#23b796
+palette = 11=#c9973e
+palette = 12=#A48FD4
+palette = 13=#7fa5c6
+palette = 14=#8b949e
+palette = 15=#e8eef4

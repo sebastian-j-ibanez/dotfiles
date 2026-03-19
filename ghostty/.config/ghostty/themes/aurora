@@ -1,0 +1,25 @@
+# Aurora theme for Ghostty
+# Lavender and teal dancing on a deep blue sky. Everything else recedes into the cold.
+
+background = #0D1120
+foreground = #B8C8D8
+cursor-color = #B8C8D8
+selection-background = #131928
+selection-foreground = #3DBFAA
+
+palette = 0=#000000
+palette = 1=#6878B0
+palette = 2=#3DBFAA
+palette = 3=#6888A0
+palette = 4=#A48FD4
+palette = 5=#5A7888
+palette = 6=#485E72
+palette = 7=#B8C8D8
+palette = 8=#1A2235
+palette = 9=#6878B0
+palette = 10=#3DBFAA
+palette = 11=#6888A0
+palette = 12=#A48FD4
+palette = 13=#5A7888
+palette = 14=#485E72
+palette = 15=#E8F2FA

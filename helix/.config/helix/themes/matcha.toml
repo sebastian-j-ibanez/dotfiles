@@ -1,28 +1,28 @@
-# Retro CRT amber theme for Helix.
+# Matcha theme for Helix
 
 # --- Syntax Highlighting ---
 
-"attribute" = "wheat"
+"attribute" = "stone"
 
 "type" = "fg"
-"type.builtin" = "smoke"
+"type.builtin" = "sable"
 "type.parameter" = "fg"
-"type.enum.variant" = "smoke"
-"constructor" = "copper"
+"type.enum.variant" = "sable"
+"constructor" = "gold"
 
 "constant" = "fg"
 "constant.builtin" = "fg"
-"constant.character" = "wheat"
-"constant.character.escape" = "smoke"
-"constant.numeric" = "smoke"
-"constant.numeric.integer" = "smoke"
-"constant.numeric.float" = "smoke"
+"constant.character" = "stone"
+"constant.character.escape" = "sable"
+"constant.numeric" = "sable"
+"constant.numeric.integer" = "sable"
+"constant.numeric.float" = "sable"
 
-"string" = "wheat"
-"string.regexp" = "amber"
-"string.special" = "ember"
-"string.special.path" = "wheat"
-"string.special.url" = { fg = "wheat", underline.style = "line" }
+"string" = "stone"
+"string.regexp" = "sable"
+"string.special" = "gold"
+"string.special.path" = "stone"
+"string.special.url" = { fg = "stone", underline.style = "line" }
 "string.special.symbol" = "fg"
 
 "comment" = "dim_bright"
@@ -31,71 +31,71 @@
 "comment.block.documentation" = "dim_bright"
 
 "variable" = "fg"
-"variable.builtin" = "amber"
+"variable.builtin" = "sable"
 "variable.parameter" = "fg"
 "variable.other.member" = "fg"
 
-"label" = "copper"
+"label" = "gold"
 
 "punctuation" = "dim_bright"
 "punctuation.delimiter" = "dim_bright"
 "punctuation.bracket" = "dim_bright"
 "punctuation.special" = "fg"
 
-"keyword" = "ember"
-"keyword.control" = "ember"
-"keyword.control.conditional" = "ember"
-"keyword.control.repeat" = "ember"
-"keyword.control.import" = "ember"
-"keyword.control.return" = "ember"
-"keyword.control.exception" = "ember"
-"keyword.operator" = "ember"
-"keyword.directive" = "smoke"
-"keyword.function" = "ember"
-"keyword.storage" = "ember"
-"keyword.storage.type" = "ember"
-"keyword.storage.modifier" = "ember"
+"keyword" = "gold"
+"keyword.control" = "gold"
+"keyword.control.conditional" = "gold"
+"keyword.control.repeat" = "gold"
+"keyword.control.import" = "gold"
+"keyword.control.return" = "gold"
+"keyword.control.exception" = "gold"
+"keyword.operator" = "gold"
+"keyword.directive" = "sable"
+"keyword.function" = "gold"
+"keyword.storage" = "gold"
+"keyword.storage.type" = "gold"
+"keyword.storage.modifier" = "gold"
 
-"operator" = "copper"
-"special" = "copper"
+"operator" = "gold"
+"special" = "gold"
 
-"function" = "amber"
-"function.builtin" = "amber"
-"function.method" = "amber"
-"function.macro" = "ember"
-"function.special" = "amber"
+"function" = "matcha"
+"function.builtin" = "matcha"
+"function.method" = "matcha"
+"function.macro" = "gold"
+"function.special" = "matcha"
 
-"tag" = "copper"
-"tag.builtin" = "copper"
+"tag" = "gold"
+"tag.builtin" = "gold"
 
 "namespace" = "dim_bright"
 
 "markup.heading" = "fg"
-"markup.heading.1" = "amber"
-"markup.heading.2" = "amber"
+"markup.heading.1" = "matcha"
+"markup.heading.2" = "matcha"
 "markup.heading.3" = "fg"
 "markup.heading.4" = "fg"
 "markup.heading.5" = "dim_bright"
 "markup.heading.6" = "dim_bright"
-"markup.list" = "ember"
+"markup.list" = "gold"
 "markup.bold" = "fg"
 "markup.italic" = "fg"
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link" = { fg = "wheat", underline.style = "line" }
-"markup.link.url" = { fg = "wheat", underline.style = "line" }
-"markup.link.label" = "wheat"
-"markup.link.text" = "amber"
+"markup.link" = { fg = "stone", underline.style = "line" }
+"markup.link.url" = { fg = "stone", underline.style = "line" }
+"markup.link.label" = "stone"
+"markup.link.text" = "matcha"
 "markup.quote" = "dim_bright"
-"markup.raw" = "copper"
-"markup.raw.inline" = "copper"
-"markup.raw.block" = "copper"
+"markup.raw" = "gold"
+"markup.raw.inline" = "gold"
+"markup.raw.block" = "gold"
 
-"diff.plus" = "amber"
-"diff.plus.gutter" = "amber"
-"diff.minus" = "ember"
-"diff.minus.gutter" = "ember"
-"diff.delta" = "smoke"
-"diff.delta.gutter" = "smoke"
+"diff.plus" = "matcha"
+"diff.plus.gutter" = "matcha"
+"diff.minus" = "gold"
+"diff.minus.gutter" = "gold"
+"diff.delta" = "sable"
+"diff.delta.gutter" = "sable"
 
 # --- UI Elements ---
 
@@ -105,24 +105,24 @@
 "ui.cursor" = { fg = "bg", bg = "white" }
 "ui.cursor.normal" = { fg = "bg", bg = "fg" }
 "ui.cursor.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.select" = { fg = "bg", bg = "amber" }
-"ui.cursor.match" = { fg = "black", bg = "amber" }
+"ui.cursor.select" = { fg = "bg", bg = "matcha" }
+"ui.cursor.match" = { fg = "black", bg = "matcha" }
 "ui.cursor.primary" = { fg = "bg", bg = "white" }
 "ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
 "ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.primary.select" = { fg = "bg", bg = "amber" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "matcha" }
 
 "ui.gutter" = { bg = "bg" }
 "ui.gutter.selected" = { bg = "bg_1" }
 
 "ui.linenr" = { fg = "dark" }
-"ui.linenr.selected" = { fg = "amber" }
+"ui.linenr.selected" = { fg = "matcha" }
 
 "ui.statusline" = { fg = "fg", bg = "dark" }
 "ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
 "ui.statusline.normal" = { fg = "fg", bg = "dark" }
-"ui.statusline.insert" = { fg = "black", bg = "smoke" }
-"ui.statusline.select" = { fg = "black", bg = "ember" }
+"ui.statusline.insert" = { fg = "black", bg = "sable" }
+"ui.statusline.select" = { fg = "black", bg = "gold" }
 "ui.statusline.separator" = { fg = "dark" }
 
 "ui.bufferline" = { fg = "dim_bright", bg = "bg" }
@@ -139,7 +139,7 @@
 "ui.text.focus" = { fg = "bright" }
 "ui.text.inactive" = { fg = "dim_bright" }
 "ui.text.info" = { fg = "fg" }
-"ui.text.directory" = "amber"
+"ui.text.directory" = "matcha"
 
 "ui.virtual" = { fg = "dark" }
 "ui.virtual.ruler" = { bg = "bg_1" }
@@ -149,14 +149,14 @@
 "ui.virtual.inlay-hint.parameter" = { fg = "dim" }
 "ui.virtual.inlay-hint.type" = { fg = "dim" }
 "ui.virtual.wrap" = { fg = "dark" }
-"ui.virtual.jump-label" = "ember"
+"ui.virtual.jump-label" = "gold"
 
-"ui.menu" = { fg = "amber", bg = "bg_1" }
+"ui.menu" = { fg = "matcha", bg = "bg_1" }
 "ui.menu.selected" = { fg = "fg", bg = "bg_1" }
 "ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
 
-"ui.selection" = { fg = "amber", bg = "bg_1" }
-"ui.selection.primary" = { fg = "amber", bg = "bg_1" }
+"ui.selection" = { fg = "matcha", bg = "bg_1" }
+"ui.selection.primary" = { fg = "matcha", bg = "bg_1" }
 
 "ui.highlight" = { bg = "bg_1" }
 "ui.highlight.frameline" = { bg = "bg_1" }
@@ -166,34 +166,34 @@
 "ui.cursorcolumn.primary" = { bg = "bg_1" }
 "ui.cursorcolumn.secondary" = { bg = "bg_1" }
 
-"warning" = { fg = "copper" }
-"error" = { fg = "ember" }
-"info" = { fg = "smoke" }
+"warning" = { fg = "gold" }
+"error" = { fg = "gold" }
+"info" = { fg = "sable" }
 "hint" = { fg = "dim" }
 
 "diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "smoke", style = "dotted" } }
-"diagnostic.warning" = { underline = { color = "copper", style = "curl" } }
-"diagnostic.error" = { underline = { color = "ember", style = "curl" } }
+"diagnostic.info" = { underline = { color = "sable", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "gold", style = "curl" } }
+"diagnostic.error" = { underline = { color = "gold", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 # --- Palette ---
-# CRT amber warmth — darkest to lightest, plus five amber accents
+# Deep moss-green darkness, pale matcha text, warm gold accents
 
 [palette]
 black = "#000000"
-bg = "#161008"
-bg_1 = "#241C12"
-dark = "#342A1C"
-dim = "#443826"
-dim_bright = "#745C3C"
-fg = "#B89868"
-bright = "#D8B888"
-white = "#FFE8C8"
+bg = "#0D1510"
+bg_1 = "#172018"
+dark = "#253020"
+dim = "#344028"
+dim_bright = "#586848"
+fg = "#A8C898"
+bright = "#C8E8B8"
+white = "#E8F8E0"
 
-ember = "#F0A030"
-amber = "#AA8040"
-wheat = "#9A8A60"
-copper = "#AA7838"
-smoke = "#908070"
+matcha = "#78B868"
+gold = "#D89A40"
+sable = "#5A9488"
+stone = "#9A9070"
+cream = "#B8B080"
