@@ -1,0 +1,203 @@
+# Naysayer theme for Helix
+# Based on naysayer-theme.el by Nick Aversano
+
+# --- Syntax Highlighting ---
+
+"attribute" = "text"
+
+"type" = "text"
+"type.builtin" = "white"
+"type.parameter" = "text"
+"type.enum.variant" = "cyan"
+"constructor" = "white"
+
+"constant" = "cyan"
+"constant.builtin" = "white"
+"constant.character" = "text"
+"constant.character.escape" = "cyan"
+"constant.numeric" = "cyan"
+"constant.numeric.integer" = "cyan"
+"constant.numeric.float" = "cyan"
+
+"string" = "green"
+"string.regexp" = "cyan"
+"string.special" = "mint"
+"string.special.path" = "green"
+"string.special.url" = { fg = "green", underline.style = "line" }
+"string.special.symbol" = "text"
+
+"comment" = "comment"
+"comment.line" = "comment"
+"comment.block" = "comment"
+"comment.block.documentation" = "comment"
+
+"variable" = "slate"
+"variable.builtin" = "white"
+"variable.parameter" = "slate"
+"variable.other.member" = "slate"
+
+"label" = "mint"
+
+"punctuation" = "mint"
+"punctuation.delimiter" = "mint"
+"punctuation.bracket" = "mint"
+"punctuation.special" = "text"
+
+"keyword" = "white"
+"keyword.control" = "white"
+"keyword.control.conditional" = "white"
+"keyword.control.repeat" = "white"
+"keyword.control.import" = "white"
+"keyword.control.return" = "white"
+"keyword.control.exception" = "white"
+"keyword.operator" = "white"
+"keyword.directive" = "white"
+"keyword.function" = "white"
+"keyword.storage" = "white"
+"keyword.storage.type" = "white"
+"keyword.storage.modifier" = "white"
+
+"operator" = "mint"
+"special" = "mint"
+
+"function" = "white"
+"function.builtin" = "white"
+"function.method" = "slate"
+"function.macro" = "mint"
+"function.special" = "mint"
+
+"tag" = "white"
+"tag.builtin" = "white"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "text"
+"markup.heading.1" = "white"
+"markup.heading.2" = "white"
+"markup.heading.3" = "text"
+"markup.heading.4" = "text"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "white"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "green", underline.style = "line" }
+"markup.link.url" = { fg = "green", underline.style = "line" }
+"markup.link.label" = "green"
+"markup.link.text" = "cyan"
+"markup.quote" = "comment"
+"markup.raw" = "mint"
+"markup.raw.inline" = "mint"
+"markup.raw.block" = "mint"
+
+"diff.plus" = "green"
+"diff.plus.gutter" = "green"
+"diff.minus" = "red"
+"diff.minus.gutter" = "red"
+"diff.delta" = "cyan"
+"diff.delta.gutter" = "cyan"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "text" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "cyan" }
+"ui.cursor.match" = { fg = "bg", bg = "cyan" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "text" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "cyan" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "cyan" }
+
+"ui.statusline" = { fg = "text", bg = "dark" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "text", bg = "dark" }
+"ui.statusline.insert" = { fg = "bg", bg = "cyan" }
+"ui.statusline.select" = { fg = "bg", bg = "orange" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "text", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "text", bg = "bg_1" }
+"ui.popup.info" = { fg = "text", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "text", bg = "bg_1" }
+
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "text" }
+"ui.text.directory" = "cyan"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = "orange"
+
+"ui.menu" = { fg = "cyan", bg = "bg_1" }
+"ui.menu.selected" = { fg = "text", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { fg = "cyan", bg = "bg_1" }
+"ui.selection.primary" = { fg = "cyan", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "orange" }
+"error" = { fg = "red" }
+"info" = { fg = "cyan" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "cyan", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# Naysayer — dark teal void, bright greens, warm sand text.
+
+[palette]
+black = "#000000"
+bg = "#062329"
+bg_1 = "#0b3335"
+dark = "#126367"
+dim = "#1a7a7a"
+dim_bright = "#6a9a8a"
+text = "#d1b897"
+bright = "#e8d0b0"
+white = "#ffffff"
+
+green = "#2ec90c"
+comment = "#44b340"
+mint = "#8cde94"
+cyan = "#7ad0c6"
+slate = "#c1d1e3"
+
+red = "#e06050"
+orange = "#fd971f"

@@ -1,0 +1,198 @@
+# Skull theme for Helix
+# Adapted from kxzk/skull-vim — monochrome grey with green accent
+
+# --- Syntax Highlighting ---
+
+"attribute" = "chalk"
+
+"type" = "fg"
+"type.builtin" = "dim_bright"
+"type.parameter" = "fg"
+"type.enum.variant" = "dim_bright"
+"constructor" = "chalk"
+
+"constant" = "fg"
+"constant.builtin" = "fg"
+"constant.character" = "chalk"
+"constant.character.escape" = "chalk"
+"constant.numeric" = "dim_bright"
+"constant.numeric.integer" = "dim_bright"
+"constant.numeric.float" = "dim_bright"
+
+"string" = "bright"
+"string.regexp" = "bone"
+"string.special" = "bone"
+"string.special.path" = "bright"
+"string.special.url" = { fg = "bright", underline.style = "line" }
+"string.special.symbol" = "fg"
+
+"comment" = { fg = "bone", modifiers = ["italic"] }
+"comment.line" = { fg = "bone", modifiers = ["italic"] }
+"comment.block" = { fg = "bone", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "bone", modifiers = ["italic"] }
+
+"variable" = "fg"
+"variable.builtin" = "bone"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "chalk"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "bone"
+"keyword.control" = "bone"
+"keyword.control.conditional" = "bone"
+"keyword.control.repeat" = "bone"
+"keyword.control.import" = "bone"
+"keyword.control.return" = "bone"
+"keyword.control.exception" = "bone"
+"keyword.operator" = "bone"
+"keyword.directive" = "chalk"
+"keyword.function" = "bone"
+"keyword.storage" = "bone"
+"keyword.storage.type" = "bone"
+"keyword.storage.modifier" = "bone"
+
+"operator" = "bone"
+"special" = "chalk"
+
+"function" = "chalk"
+"function.builtin" = "chalk"
+"function.method" = "chalk"
+"function.macro" = "bone"
+"function.special" = "chalk"
+
+"tag" = "chalk"
+"tag.builtin" = "chalk"
+
+"namespace" = "dim_bright"
+
+"markup.heading" = "fg"
+"markup.heading.1" = "bone"
+"markup.heading.2" = "bone"
+"markup.heading.3" = "fg"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "dim_bright"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "bone"
+"markup.bold" = "fg"
+"markup.italic" = "fg"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "chalk", underline.style = "line" }
+"markup.link.url" = { fg = "chalk", underline.style = "line" }
+"markup.link.label" = "chalk"
+"markup.link.text" = "bone"
+"markup.quote" = "dim_bright"
+"markup.raw" = "chalk"
+"markup.raw.inline" = "chalk"
+"markup.raw.block" = "chalk"
+
+"diff.plus" = "bone"
+"diff.plus.gutter" = "bone"
+"diff.minus" = "dim_bright"
+"diff.minus.gutter" = "dim_bright"
+"diff.delta" = "marrow"
+"diff.delta.gutter" = "marrow"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "bone" }
+"ui.cursor.match" = { fg = "black", bg = "bone" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "bone" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "bone" }
+
+"ui.statusline" = { fg = "black", bg = "bone" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "black", bg = "bone" }
+"ui.statusline.insert" = { fg = "black", bg = "marrow" }
+"ui.statusline.select" = { fg = "black", bg = "fg" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "bone"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = "bone"
+
+"ui.menu" = { fg = "bone", bg = "bg_1" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
+"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+
+"ui.selection" = { fg = "bone", bg = "bg_1" }
+"ui.selection.primary" = { fg = "bone", bg = "bg_1" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "chalk" }
+"error" = { fg = "fg" }
+"info" = { fg = "marrow" }
+"hint" = { fg = "dim" }
+
+"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "marrow", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "chalk", style = "curl" } }
+"diagnostic.error" = { underline = { color = "fg", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# Monochrome grey with a single green accent, true to skull-vim's minimalism.
+
+[palette]
+black = "#000000"
+bg = "#222222"
+bg_1 = "#2c2c2c"
+dark = "#393939"
+dim = "#414141"
+dim_bright = "#707070"
+fg = "#A0A0A0"
+bright = "#d3d3d3"
+white = "#FFFFFF"
+
+bone = "#7eae81"
+marrow = "#268bd2"
+chalk = "#c0c0c0"
