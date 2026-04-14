@@ -1,0 +1,37 @@
+# Matcha — Deep moss darkness, pale green text, warm gold accents.
+
+# Accent and UI colors
+accent = "#78B868"
+active_border_color = "#78B868"
+active_tab_background = "#172018"
+
+# Cursor colors
+cursor = "#A8C898"
+
+# Primary colors
+foreground = "#A8C898"
+background = "#0D1510"
+
+# Selection colors
+selection_foreground = "#78B868"
+selection_background = "#172018"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#D89A40"
+color2  = "#78B868"
+color3  = "#D89A40"
+color4  = "#5A9488"
+color5  = "#9A9070"
+color6  = "#5A9488"
+color7  = "#A8C898"
+
+# Bright colors (ANSI 8-15)
+color8  = "#172018"
+color9  = "#D89A40"
+color10 = "#78B868"
+color11 = "#D89A40"
+color12 = "#5A9488"
+color13 = "#9A9070"
+color14 = "#5A9488"
+color15 = "#E8F8E0"

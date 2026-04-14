@@ -1,0 +1,37 @@
+# Amber — Retro CRT amber. DOS terminals, monochrome monitors, Alien Isolation.
+
+# Accent and UI colors
+accent = "#FFAA33"
+active_border_color = "#FFAA33"
+active_tab_background = "#2E2418"
+
+# Cursor colors
+cursor = "#B89868"
+
+# Primary colors
+foreground = "#B89868"
+background = "#0E0A06"
+
+# Selection colors
+selection_foreground = "#AA8040"
+selection_background = "#1E1610"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#FFAA33"
+color2  = "#AA8040"
+color3  = "#AA7838"
+color4  = "#908070"
+color5  = "#9A8A60"
+color6  = "#705838"
+color7  = "#B89868"
+
+# Bright colors (ANSI 8-15)
+color8  = "#2E2418"
+color9  = "#FFAA33"
+color10 = "#AA8040"
+color11 = "#AA7838"
+color12 = "#908070"
+color13 = "#9A8A60"
+color14 = "#705838"
+color15 = "#FFE8C8"

@@ -1,0 +1,37 @@
+# Zenburn — Warm, low-contrast, easy on the eyes. Classic Vim aesthetic.
+
+# Accent and UI colors
+accent = "#8cd0d3"
+active_border_color = "#8cd0d3"
+active_tab_background = "#4f4f4f"
+
+# Cursor colors
+cursor = "#dcdccc"
+
+# Primary colors
+foreground = "#dcdccc"
+background = "#3f3f3f"
+
+# Selection colors
+selection_foreground = "#8cd0d3"
+selection_background = "#4f4f4f"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#cc9393"
+color2  = "#7f9f7f"
+color3  = "#f0dfaf"
+color4  = "#94bff3"
+color5  = "#ffcfaf"
+color6  = "#8cd0d3"
+color7  = "#dcdccc"
+
+# Bright colors (ANSI 8-15)
+color8  = "#4f4f4f"
+color9  = "#cc9393"
+color10 = "#8cd0d3"
+color11 = "#f0dfaf"
+color12 = "#94bff3"
+color13 = "#ffcfaf"
+color14 = "#7f9f7f"
+color15 = "#ffffff"

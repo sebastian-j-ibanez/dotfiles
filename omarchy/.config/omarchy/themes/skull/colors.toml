@@ -1,0 +1,37 @@
+# Skull — Monochrome grey with green accent. Minimal, stark, precise.
+
+# Accent and UI colors
+accent = "#7eae81"
+active_border_color = "#7eae81"
+active_tab_background = "#2c2c2c"
+
+# Cursor colors
+cursor = "#A0A0A0"
+
+# Primary colors
+foreground = "#A0A0A0"
+background = "#222222"
+
+# Selection colors
+selection_foreground = "#7eae81"
+selection_background = "#2c2c2c"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#707070"
+color2  = "#7eae81"
+color3  = "#c0c0c0"
+color4  = "#268bd2"
+color5  = "#707070"
+color6  = "#587878"
+color7  = "#A0A0A0"
+
+# Bright colors (ANSI 8-15)
+color8  = "#2c2c2c"
+color9  = "#707070"
+color10 = "#7eae81"
+color11 = "#c0c0c0"
+color12 = "#268bd2"
+color13 = "#707070"
+color14 = "#587878"
+color15 = "#FFFFFF"

@@ -62,7 +62,8 @@ precmd() {
 # -------
 # ALIASES
 # -------
-alias lsd="lsd -l --color=never"
+# alias lsd="lsd -l --color=never"
+alias lsd="eza -lh --group-directories-first --icons=auto"
 alias hx="helix"
 alias fx="felix"
 alias rs=". ~/.local/bin/pmenu resume"
@@ -117,7 +118,6 @@ export GERBIL_STD_LIB="/opt/gerbil/src/std"
 # FLIP
 # ----
 export GHOSTTY_CONFIG=$HOME/.config/ghostty/config
-# export GHOSTTY_DARK="Forest Blue"
 export GHOSTTY_DARK="tron"
 export GHOSTTY_LIGHT="One Half Light"
 export HELIX_CONFIG=$HOME/.config/helix/config.toml

@@ -1,0 +1,26 @@
+#!/bin/bash
+# Update Helix theme to match the active Omarchy theme.
+# Only switches if a matching custom Helix theme exists.
+
+THEME_NAME=$1
+HELIX_CONFIG="$HOME/.config/helix/config.toml"
+
+declare -A HELIX_THEMES=(
+  [tron]="tron"
+  [amber]="amber"
+  [clownfish]="clownfish"
+  [phosphor]="phosphor"
+  [skull]="skull"
+  [matcha]="matcha"
+  [naysayer]="naysayer"
+  [zenburn]="zenburn"
+  [lumon]="lumon"
+  [lumon-light]="lumon_light"
+  [modus-operandi]="modus_operandi"
+)
+
+HELIX_THEME="${HELIX_THEMES[$THEME_NAME]}"
+
+if [[ -n "$HELIX_THEME" && -f "$HELIX_CONFIG" ]]; then
+  sed -i "s/^theme = .*/theme = \"$HELIX_THEME\"/" "$HELIX_CONFIG"
+fi

@@ -1,0 +1,37 @@
+# Naysayer — Dark teal void, bright greens, warm sand text.
+
+# Accent and UI colors
+accent = "#7ad0c6"
+active_border_color = "#7ad0c6"
+active_tab_background = "#0b3335"
+
+# Cursor colors
+cursor = "#d1b897"
+
+# Primary colors
+foreground = "#d1b897"
+background = "#062329"
+
+# Selection colors
+selection_foreground = "#7ad0c6"
+selection_background = "#0b3335"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#e06050"
+color2  = "#2ec90c"
+color3  = "#fd971f"
+color4  = "#7ad0c6"
+color5  = "#8cde94"
+color6  = "#44b340"
+color7  = "#d1b897"
+
+# Bright colors (ANSI 8-15)
+color8  = "#0b3335"
+color9  = "#e06050"
+color10 = "#2ec90c"
+color11 = "#fd971f"
+color12 = "#7ad0c6"
+color13 = "#8cde94"
+color14 = "#44b340"
+color15 = "#ffffff"

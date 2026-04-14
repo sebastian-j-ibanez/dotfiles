@@ -1,0 +1,37 @@
+# Clownfish — Dark teal waters, warm copper and sand accents.
+
+# Accent and UI colors
+accent = "#5EBCAB"
+active_border_color = "#5EBCAB"
+active_tab_background = "#2A3840"
+
+# Cursor colors
+cursor = "#C6D5CF"
+
+# Primary colors
+foreground = "#C6D5CF"
+background = "#0F191F"
+
+# Selection colors
+selection_foreground = "#5EBCAB"
+selection_background = "#1A2630"
+
+# Normal colors (ANSI 0-7)
+color0  = "#000000"
+color1  = "#E0884A"
+color2  = "#5EBCAB"
+color3  = "#B8A88A"
+color4  = "#C89460"
+color5  = "#8AA0AC"
+color6  = "#587078"
+color7  = "#C6D5CF"
+
+# Bright colors (ANSI 8-15)
+color8  = "#2A3840"
+color9  = "#E0884A"
+color10 = "#5EBCAB"
+color11 = "#B8A88A"
+color12 = "#C89460"
+color13 = "#8AA0AC"
+color14 = "#587078"
+color15 = "#FFFFFF"

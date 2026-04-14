@@ -39,7 +39,7 @@ name = "c"
 scope = "source.c"
 file-types = ["c", "h"]
 language-servers = ["clangd"]
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "    " }
 
 # C++
@@ -48,7 +48,7 @@ name = "cpp"
 scope = "source.cpp"
 file-types = ["cpp", "cc", "cxx", "hpp", "hxx", "hh"]
 language-servers = ["clangd"]
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "    " }
 
 [language-server.clangd]
