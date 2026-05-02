@@ -1,4 +1,5 @@
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+# config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+theme = lumon
 font-family = "FiraCode Nerd Font Mono"	
 font-size = 11
 cursor-style = bar
@@ -9,3 +10,4 @@ keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+l=goto_split:right
+shell-integration-features = ssh-env,ssh-terminfo
