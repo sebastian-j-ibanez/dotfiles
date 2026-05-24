@@ -1,0 +1,25 @@
+# Cyan Light theme for Ghostty
+# Port of the local Helix cyan_light override with cooler, more saturated accents.
+
+background = #F2F3F7
+foreground = #25293C
+cursor-color = #25293C
+selection-background = #C4E2FF
+selection-foreground = #005FE6
+
+palette = 0=#FFFFFF
+palette = 1=#D1001F
+palette = 2=#008F4C
+palette = 3=#5F88D9
+palette = 4=#005FE6
+palette = 5=#8A1FD1
+palette = 6=#007F8A
+palette = 7=#25293C
+palette = 8=#A9B0CA
+palette = 9=#B00020
+palette = 10=#38C978
+palette = 11=#66B3FF
+palette = 12=#4DA3FF
+palette = 13=#D8A8FF
+palette = 14=#4FB7C4
+palette = 15=#000000

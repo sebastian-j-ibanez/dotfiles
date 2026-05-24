@@ -1,0 +1,28 @@
+# Mycelium theme for Ghostty
+# Companion to the Helix Mycelium theme
+
+background = #222222
+foreground = #a8a8a8
+cursor-color = #dcdcdc
+selection-background = #414141
+selection-foreground = #dcdcdc
+
+# Normal
+palette = 0=#222222
+palette = 1=#a08882
+palette = 2=#7eae81
+palette = 3=#a09080
+palette = 4=#6b95a8
+palette = 5=#9a8890
+palette = 6=#6ba0a8
+palette = 7=#b8b8b8
+
+# Bright
+palette = 8=#656565
+palette = 9=#b09a94
+palette = 10=#9ac79d
+palette = 11=#b8a890
+palette = 12=#88aabe
+palette = 13=#aa98a0
+palette = 14=#88b8bc
+palette = 15=#ffffff

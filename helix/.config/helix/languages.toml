@@ -33,13 +33,21 @@ formatter = { command = "goimports" }
 [language-server.gopls]
 command = "gopls"
 
+# Java
+[[language]]
+name = "java"
+language-servers = ["jdtls"]
+
+[language-server.jdtls]
+command = "jdtls"
+
 # C
 [[language]]
 name = "c"
 scope = "source.c"
 file-types = ["c", "h"]
 language-servers = ["clangd"]
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "    " }
 
 # C++
@@ -48,7 +56,7 @@ name = "cpp"
 scope = "source.cpp"
 file-types = ["cpp", "cc", "cxx", "hpp", "hxx", "hh"]
 language-servers = ["clangd"]
-auto-format = true
+auto-format = false
 indent = { tab-width = 4, unit = "    " }
 
 [language-server.clangd]
@@ -90,11 +98,31 @@ args = ["start"]
 
 [[language]]
 name = "javascript"
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+auto-format = true
 formatter = { command = "prettier", args = ["--stdin-filepath", "${INPUT}"], stdin = true }
 
 [[language]]
 name = "typescript"
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+auto-format = true
 formatter = { command = "prettier", args = ["--stdin-filepath", "${INPUT}"], stdin = true }
+
+# Svelte
+[[language]]
+name = "svelte"
+language-servers = ["svelteserver", "tailwindcss-ls"]
+auto-format = true
+formatter = { command = "prettier", args = ["--stdin-filepath", "${INPUT}", "--plugin", "prettier-plugin-svelte"], stdin = true }
+
+[language-server.svelteserver]
+command = "svelteserver"
+args = ["--stdio"]
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+config = { userLanguages = { svelte = "html", "*.svelte" = "html" } }
 
 # Haskell
 [[language]]

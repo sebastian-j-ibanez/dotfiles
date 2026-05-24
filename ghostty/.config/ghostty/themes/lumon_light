@@ -1,0 +1,25 @@
+# Lumon Light theme for Ghostty
+# The Lumon Industries office floor bathed in fluorescent light.
+
+background = #eef4f8
+foreground = #152535
+cursor-color = #152535
+selection-background = #c8dff0
+selection-foreground = #1270b5
+
+palette = 0=#000000
+palette = 1=#0a5898
+palette = 2=#1270b5
+palette = 3=#1a6090
+palette = 4=#2878a8
+palette = 5=#006a8a
+palette = 6=#8faec0
+palette = 7=#152535
+palette = 8=#b4ccd8
+palette = 9=#0a5898
+palette = 10=#1270b5
+palette = 11=#1a6090
+palette = 12=#2878a8
+palette = 13=#006a8a
+palette = 14=#8faec0
+palette = 15=#ffffff

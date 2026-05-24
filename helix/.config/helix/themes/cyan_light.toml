@@ -1,0 +1,163 @@
+# Cyan Light
+# Local override of Helix's built-in cyan_light theme with brighter, more saturated accents.
+
+"attribute" = "blue"
+"type" = "blue"
+"type.enum.variant" = "purple"
+"constructor" = "blue"
+
+"constant" = "darker_blue"
+"constant.builtin.boolean" = "blue"
+"constant.character" = "blue"
+"constant.character.escape" = "dark_red"
+"constant.numeric" = "blue"
+
+"string" = "green"
+"string.regexp" = "blue"
+"string.special" = { fg = "dark_red", modifiers = ["underlined"] }
+
+"comment" = "comment_gray"
+
+"variable" = "green_blue"
+"variable.builtin" = { fg = "darker_blue" }
+"variable.parameter" = "purple"
+"variable.other.member" = "purple"
+
+"label" = { fg = "darker_blue", modifiers = ["underlined"] }
+"punctuation" = "shade06"
+
+"keyword" = "darker_blue"
+"keyword.control.exception" = "darker_blue"
+
+"operator" = "shade06"
+
+"function" = "dark_blue"
+"function.macro" = "purple"
+"function.builtin" = { fg = "dark_blue", modifiers = ["italic"] }
+"function.special" = "dark_red"
+"function.method" = "dark_yellow"
+
+"tag" = "darker_blue"
+"special" = "dark_blue"
+"namespace" = "darker_blue"
+
+"markup.bold" = { fg = "shade06", modifiers = ["bold"] }
+"markup.italic" = { fg = "shade06", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "shade06", modifiers = ["crossed_out"] }
+"markup.heading" = { fg = "purple" }
+"markup.list" = "darker_blue"
+"markup.list.numbered" = "darker_blue"
+"markup.list.unnumbered" = "darker_blue"
+"markup.link.url" = "shade06"
+"markup.link.text" = { fg = "dark_blue", modifiers = ["underlined"] }
+"markup.link.label" = "dark_blue"
+"markup.quote" = "green"
+"markup.raw" = "green"
+"markup.raw.inline" = "green"
+"markup.raw.block" = "green"
+
+"diff.plus" = "green"
+"diff.plus.gutter" = "gutter_green"
+"diff.minus" = "red"
+"diff.minus.gutter" = "gutter_red"
+"diff.delta" = "blue"
+"diff.delta.gutter" = "gutter_blue"
+
+# ui specific
+"ui.background" = { bg = "shade00" }
+"ui.cursor" = { bg = "shade02" }
+"ui.cursor.primary" = { bg = "cursor_blue" }
+"ui.cursor.match" = { fg = "shade00", bg = "shade04" }
+"ui.cursor.primary.select" = { bg = "light_purple" }
+"ui.cursor.primary.insert" = { bg = "light_green" }
+
+"ui.selection" = { bg = "lighter_blue" }
+"ui.selection.primary" = { bg = "lighter_blue" }
+
+"ui.highlight" = { bg = "faint_blue" }
+"ui.cursorline.primary" = { bg = "faint_blue" }
+
+"ui.linenr" = { fg = "shade03" }
+"ui.linenr.selected" = { fg = "shade04", bg = "faint_blue", modifiers = [
+    "bold",
+] }
+
+"ui.statusline" = { fg = "shade06", bg = "shade01" }
+"ui.statusline.inactive" = { fg = "shade04", bg = "shade00" }
+"ui.statusline.normal" = { fg = "shade00", bg = "blue" }
+"ui.statusline.insert" = { fg = "shade00", bg = "green" }
+"ui.statusline.select" = { fg = "shade00", bg = "purple" }
+
+"ui.popup" = { fg = "shade04", bg = "shade01_lighter" }
+"ui.window" = { fg = "shade04", bg = "shade00" }
+"ui.help" = { fg = "shade06", bg = "shade00" }
+"ui.text" = "shade05"
+"ui.text.focus" = { fg = "shade07", bg = "light_blue" }
+"ui.text.directory" = "blue"
+
+"ui.virtual" = "shade03"
+"ui.virtual.ruler" = { bg = "shade01" }
+"ui.virtual.inlay-hint" = { fg = "shade03_darker" }
+"ui.virtual.jump-label" = { fg = "shade07", bg = "shade01", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "shade05", bg = "shade01_lighter" }
+"ui.menu.selected" = { fg = "shade07", bg = "light_blue" }
+
+"hint" = "shade04"
+"info" = "light_blue"
+"warning" = "orange"
+"error" = "red"
+
+"diagnostic" = { modifiers = [] }
+"diagnostic.hint" = { underline = { color = "shade04", style = "line" } }
+"diagnostic.info" = { underline = { color = "light_blue", style = "line" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+shade00 = "#f2f3f7"
+shade01 = "#dadde8"
+shade02 = "#c1c6d9"
+shade03 = "#a9b0ca"
+shade04 = "#525c85"
+shade05 = "#434b6c"
+shade06 = "#343a54"
+shade07 = "#25293c"
+
+shade01_lighter = "#e6e8f0"
+shade03_darker = "#9199bb"
+shade04_lighter = "#616d9d"
+
+background = "#f2f3f7"
+foreground = "#25293c"
+
+comment_gray = "#6f7a96"
+
+gutter_blue = "#bfd8ff"
+faint_blue = "#e3f1ff"
+lighter_blue = "#c4e2ff"
+light_blue = "#66b3ff"
+cursor_blue = "#4da3ff"
+blue = "#005fe6"
+dark_blue = "#0064c8"
+darker_blue = "#0047b3"
+
+purple = "#8a1fd1"
+light_purple = "#d8a8ff"
+
+gutter_green = "#c5e6cf"
+green = "#008f4c"
+light_green = "#38c978"
+green_blue = "#007f8a"
+
+yellow = "#5f88d9"
+dark_yellow = "#967400"
+
+light_orange = "#f9c881"
+orange = "#e68500"
+
+gutter_red = "#f0c0c5"
+red = "#d1001f"
+dark_red = "#b00020"

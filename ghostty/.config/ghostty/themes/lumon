@@ -1,0 +1,25 @@
+# Lumon theme for Ghostty
+# Lumon Industries — deep navy void, cool blue light, monochromatic serenity.
+
+background = #1b2d40
+foreground = #d6e2ee
+cursor-color = #d6e2ee
+selection-background = #24384d
+selection-foreground = #6fb8e3
+
+palette = 0=#000000
+palette = 1=#4d9ed3
+palette = 2=#6fb8e3
+palette = 3=#8bc9eb
+palette = 4=#5e95bc
+palette = 5=#b4e4f6
+palette = 6=#4a6b80
+palette = 7=#d6e2ee
+palette = 8=#304860
+palette = 9=#4d9ed3
+palette = 10=#6fb8e3
+palette = 11=#8bc9eb
+palette = 12=#5e95bc
+palette = 13=#b4e4f6
+palette = 14=#4a6b80
+palette = 15=#ffffff

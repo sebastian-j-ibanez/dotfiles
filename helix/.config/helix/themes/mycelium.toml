@@ -1,0 +1,208 @@
+# Mycelium theme
+
+# Tier 1a (verbs, bone/green):   functions, methods, macros, tags
+# Tier 1b (nouns, bright/white): types, enum variants, constructors
+# Tier 2  (data, rust):          strings, numbers, constants
+# Tier 3  (scaffolding, greys):  keywords, operators, variables, punctuation
+# Tier 4  (muted, dim_bright):   comments
+#
+# keyword.control.return/exception lifted to `bright` + italic so disruptive
+# control flow still stands out without dragging all keywords into the spotlight.
+
+# --- Syntax Highlighting ---
+
+"attribute" = "chalk"
+
+"type" = "bright"
+"type.builtin" = "bright"
+"type.parameter" = "fg"
+"type.enum.variant" = "bright"
+"constructor" = "bright"
+
+"constant" = "ash"
+"constant.builtin" = "ash"
+"constant.character" = "ash"
+"constant.character.escape" = "chalk"
+"constant.numeric" = "ash"
+"constant.numeric.integer" = "ash"
+"constant.numeric.float" = "ash"
+
+"string" = "ash"
+"string.regexp" = "ash"
+"string.special" = "chalk"
+"string.special.path" = "ash"
+"string.special.url" = { fg = "ash", underline.style = "line" }
+"string.special.symbol" = "ash"
+
+"comment" = { fg = "dim_bright", modifiers = ["italic"] }
+"comment.line" = { fg = "dim_bright", modifiers = ["italic"] }
+"comment.block" = { fg = "dim_bright", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "dim_bright", modifiers = ["italic"] }
+
+"variable" = "fg"
+"variable.builtin" = "chalk"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"label" = "chalk"
+
+"punctuation" = "dim_bright"
+"punctuation.delimiter" = "dim_bright"
+"punctuation.bracket" = "dim_bright"
+"punctuation.special" = "fg"
+
+"keyword" = "chalk"
+"keyword.control" = "chalk"
+"keyword.control.conditional" = "chalk"
+"keyword.control.repeat" = "chalk"
+"keyword.control.import" = "chalk"
+"keyword.control.return" = { fg = "bright", modifiers = ["italic"] }
+"keyword.control.exception" = { fg = "bright", modifiers = ["italic"] }
+"keyword.operator" = "chalk"
+"keyword.directive" = "chalk"
+"keyword.function" = "chalk"
+"keyword.storage" = "chalk"
+"keyword.storage.type" = "chalk"
+"keyword.storage.modifier" = "chalk"
+
+"operator" = "chalk"
+"special" = "chalk"
+
+"function" = "bone"
+"function.builtin" = "bone"
+"function.method" = "bone"
+"function.macro" = "bone"
+"function.special" = "bone"
+
+"tag" = "bone"
+"tag.builtin" = "bone"
+
+"namespace" = "fg"
+
+"markup.heading" = "bone"
+"markup.heading.1" = "bone"
+"markup.heading.2" = "bone"
+"markup.heading.3" = "bone"
+"markup.heading.4" = "fg"
+"markup.heading.5" = "fg"
+"markup.heading.6" = "dim_bright"
+"markup.list" = "chalk"
+"markup.bold" = { fg = "bright", modifiers = ["bold"] }
+"markup.italic" = { fg = "fg", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "ash", underline.style = "line" }
+"markup.link.url" = { fg = "ash", underline.style = "line" }
+"markup.link.label" = "ash"
+"markup.link.text" = "ash"
+"markup.quote" = "dim_bright"
+"markup.raw" = "chalk"
+"markup.raw.inline" = "chalk"
+"markup.raw.block" = "chalk"
+
+"diff.plus" = "bone"
+"diff.plus.gutter" = "bone"
+"diff.minus" = "ash"
+"diff.minus.gutter" = "ash"
+"diff.delta" = "marrow"
+"diff.delta.gutter" = "marrow"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "dark" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.select" = { fg = "bg", bg = "bone" }
+"ui.cursor.match" = { fg = "black", bg = "bone" }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "bone" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_1" }
+
+"ui.linenr" = { fg = "dark" }
+"ui.linenr.selected" = { fg = "bone" }
+
+"ui.statusline" = { fg = "bright", bg = "bg_1" }
+"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
+"ui.statusline.normal" = { fg = "bright", bg = "bg_1" }
+"ui.statusline.insert" = { fg = "bone", bg = "bg_1" }
+"ui.statusline.select" = { fg = "ash", bg = "bg_1" }
+"ui.statusline.separator" = { fg = "dark" }
+
+"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
+"ui.bufferline.active" = { fg = "bright", bg = "bg_1" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.popup" = { fg = "fg", bg = "bg_1" }
+"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+
+"ui.window" = { fg = "dark" }
+"ui.help" = { fg = "fg", bg = "bg_1" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "bone"
+
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "bg_1" }
+"ui.virtual.whitespace" = { fg = "dark" }
+"ui.virtual.indent-guide" = { fg = "dark" }
+"ui.virtual.inlay-hint" = { fg = "dim" }
+"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
+"ui.virtual.inlay-hint.type" = { fg = "dim" }
+"ui.virtual.wrap" = { fg = "dark" }
+"ui.virtual.jump-label" = { fg = "ash", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "fg", bg = "bg_1" }
+"ui.menu.selected" = { fg = "bright", bg = "dim" }
+"ui.menu.scroll" = { fg = "dim_bright", bg = "bg_1" }
+
+"ui.selection" = { bg = "dim" }
+"ui.selection.primary" = { bg = "dim" }
+
+"ui.highlight" = { bg = "bg_1" }
+"ui.highlight.frameline" = { bg = "bg_1" }
+
+"ui.cursorline.primary" = { bg = "bg_1" }
+"ui.cursorline.secondary" = { bg = "bg_1" }
+"ui.cursorcolumn.primary" = { bg = "bg_1" }
+"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+
+"warning" = { fg = "bright" }
+"error" = { fg = "bright" }
+"info" = { fg = "marrow" }
+"hint" = { fg = "dim_bright" }
+
+"diagnostic.hint" = { underline = { color = "dim_bright", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "marrow", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "bright", style = "curl" } }
+"diagnostic.error" = { underline = { color = "bright", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# Greys spread further apart so chalk/bright/fg are clearly distinct.
+# rust = warm accent for the data layer, complementary to bone (green).
+
+[palette]
+black = "#000000"
+bg = "#222222"
+bg_1 = "#2c2c2c"
+dark = "#393939"
+dim = "#414141"
+dim_bright = "#656565"
+fg = "#a8a8a8"
+chalk = "#b8b8b8"
+bright = "#dcdcdc"
+white = "#FFFFFF"
+
+bone = "#7eae81"
+ash = "#a09080"
+marrow = "#6b95a8"
