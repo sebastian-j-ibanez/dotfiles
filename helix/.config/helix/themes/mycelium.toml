@@ -2,7 +2,8 @@
 
 # Tier 1a (verbs, bone/green):   functions, methods, macros, tags
 # Tier 1b (nouns, bright/white): types, enum variants, constructors
-# Tier 2  (data, rust):          strings, numbers, constants
+# Tier 2a (text, ash):           strings
+# Tier 2b (data, lichen/teal):   numbers, constants, char literals
 # Tier 3  (scaffolding, greys):  keywords, operators, variables, punctuation
 # Tier 4  (muted, dim_bright):   comments
 #
@@ -19,13 +20,13 @@
 "type.enum.variant" = "bright"
 "constructor" = "bright"
 
-"constant" = "ash"
-"constant.builtin" = "ash"
-"constant.character" = "ash"
+"constant" = "lichen"
+"constant.builtin" = "lichen"
+"constant.character" = "lichen"
 "constant.character.escape" = "chalk"
-"constant.numeric" = "ash"
-"constant.numeric.integer" = "ash"
-"constant.numeric.float" = "ash"
+"constant.numeric" = "lichen"
+"constant.numeric.integer" = "lichen"
+"constant.numeric.float" = "lichen"
 
 "string" = "ash"
 "string.regexp" = "ash"
@@ -189,7 +190,8 @@
 
 # --- Palette ---
 # Greys spread further apart so chalk/bright/fg are clearly distinct.
-# rust = warm accent for the data layer, complementary to bone (green).
+# ash = warm text (strings); lichen = cool teal for numbers/constants, set
+# apart from tan. bone (green) + marrow (blue) round out the accents.
 
 [palette]
 black = "#000000"
@@ -206,3 +208,4 @@ white = "#FFFFFF"
 bone = "#7eae81"
 ash = "#a09080"
 marrow = "#6b95a8"
+lichen = "#66a399"

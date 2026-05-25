@@ -14,7 +14,7 @@ palette = 2=#7eae81
 palette = 3=#a09080
 palette = 4=#6b95a8
 palette = 5=#9a8890
-palette = 6=#6ba0a8
+palette = 6=#66a399
 palette = 7=#b8b8b8
 
 # Bright
@@ -24,5 +24,5 @@ palette = 10=#9ac79d
 palette = 11=#b8a890
 palette = 12=#88aabe
 palette = 13=#aa98a0
-palette = 14=#88b8bc
+palette = 14=#83bbad
 palette = 15=#ffffff
