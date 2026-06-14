@@ -1,10 +1,13 @@
-theme = mycelium
+theme = eiffel_plain
+# theme = cyan_light
 font-family = "FiraCode Nerd Font Mono"	
 font-size = 11
 cursor-style = bar
 adjust-cursor-thickness = 3
 window-width = 110
 window-height = 33
+keybind = ctrl+shift+h=move_tab:-1
+keybind = ctrl+shift+l=move_tab:1
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top

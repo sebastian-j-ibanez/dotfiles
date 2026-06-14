@@ -1,0 +1,24 @@
+# Eiffel Plain theme for Ghostty
+
+background = #ffffff
+foreground = #000000
+cursor-color = #0100b6
+selection-background = #dedede
+selection-foreground = #000000
+
+palette = 0=#000000
+palette = 1=#990000
+palette = 2=#006810
+palette = 3=#7a5f00
+palette = 4=#0100b6
+palette = 5=#b90690
+palette = 6=#007878
+palette = 7=#ededed
+palette = 8=#808080
+palette = 9=#d80800
+palette = 10=#00b418
+palette = 11=#8b6200
+palette = 12=#585cf6
+palette = 13=#b90690
+palette = 14=#007878
+palette = 15=#ffffff

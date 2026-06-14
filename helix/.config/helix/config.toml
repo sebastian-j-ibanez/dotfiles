@@ -1,4 +1,5 @@
-theme = "mycelium"
+theme = "eiffel_plain"
+# theme = "cyan_light"
 
 [editor]
 line-number = "relative" 
