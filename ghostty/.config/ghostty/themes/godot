@@ -1,0 +1,29 @@
+# Godot theme for Ghostty
+# Based on the default Godot editor colors (voylin/godot_color_theme)
+# Classic blue-grey base #363d4a | accent #70bafa | contrast 0.3
+
+background = #252a33
+foreground = #e0e0e0
+cursor-color = #ffffff
+selection-background = #5888b3
+selection-foreground = #e0e0e0
+
+# Normal
+palette = 0=#1d2128
+palette = 1=#ff7085
+palette = 2=#42ffc2
+palette = 3=#ffeda1
+palette = 4=#57b3ff
+palette = 5=#ff8ccc
+palette = 6=#8fffdb
+palette = 7=#e0e0e0
+
+# Bright
+palette = 8=#666970
+palette = 9=#ff6666
+palette = 10=#8fffdb
+palette = 11=#ffb373
+palette = 12=#abc9ff
+palette = 13=#ff8ccc
+palette = 14=#c7ffed
+palette = 15=#ffffff

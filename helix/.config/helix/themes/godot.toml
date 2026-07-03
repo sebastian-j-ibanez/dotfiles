@@ -1,0 +1,237 @@
+# Godot theme
+#
+# Port of the default Godot editor colors (voylin/godot_color_theme), which
+# replicate EditorThemeManager.cpp for the classic blue-grey base #363d4a,
+# accent #70bafa, contrast 0.3. Syntax mapping follows the project's Neovim
+# treesitter groups:
+#
+#   keyword          red        (var/func/storage keywords, booleans)
+#   control_flow     pink       (if/for/return/match/exception)
+#   base_type        mint       (builtin types, constructors)
+#   user_type        pale mint  (user classes, namespaces)
+#   function_def     cyan       (function/method definitions)
+#   function_call    blue       (function/method calls)
+#   member_var       pale blue  (members, params, constants, properties)
+#   symbol           lavender   (operators, punctuation, brackets)
+#   string           sand       (strings)
+#   number           aqua       (numbers)
+#   gd_annotation    orange     (annotations, escapes, macros)
+
+# --- Syntax Highlighting ---
+
+"attribute" = "gd_annotation"
+
+"type" = "user_type"
+"type.builtin" = "base_type"
+"type.parameter" = "user_type"
+"type.enum.variant" = "member_var"
+"constructor" = "base_type"
+
+"constant" = "member_var"
+"constant.builtin" = "keyword"
+"constant.builtin.boolean" = "keyword"
+"constant.character" = "string"
+"constant.character.escape" = "gd_annotation"
+"constant.numeric" = "number"
+"constant.numeric.integer" = "number"
+"constant.numeric.float" = "number"
+
+"string" = "string"
+"string.regexp" = "string"
+"string.special" = "gd_node_path"
+"string.special.path" = "gd_node_path"
+"string.special.url" = { fg = "gd_node_path", underline.style = "line" }
+"string.special.symbol" = "gd_node_path"
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "comment", modifiers = ["italic"] }
+
+"variable" = "fg"
+"variable.builtin" = "symbol"
+"variable.parameter" = "member_var"
+"variable.other.member" = "member_var"
+
+"label" = "symbol"
+
+"punctuation" = "symbol"
+"punctuation.delimiter" = "symbol"
+"punctuation.bracket" = "symbol"
+"punctuation.special" = "symbol"
+
+"keyword" = "keyword"
+"keyword.control" = "control_flow"
+"keyword.control.conditional" = "control_flow"
+"keyword.control.repeat" = "control_flow"
+"keyword.control.return" = "control_flow"
+"keyword.control.exception" = "control_flow"
+"keyword.control.import" = "keyword"
+"keyword.operator" = "keyword"
+"keyword.directive" = "gd_annotation"
+"keyword.function" = "keyword"
+"keyword.storage" = "keyword"
+"keyword.storage.type" = "keyword"
+"keyword.storage.modifier" = "keyword"
+
+"operator" = "symbol"
+"special" = "symbol"
+
+"function" = "function_def"
+"function.builtin" = "builtin_func"
+"function.method" = "function_def"
+"function.macro" = "gd_annotation"
+"function.special" = "gd_annotation"
+
+"tag" = "keyword"
+"tag.builtin" = "keyword"
+
+"namespace" = "user_type"
+
+"markup.heading" = { fg = "function_def", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "function_def", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "function_call", modifiers = ["bold"] }
+"markup.heading.3" = "base_type"
+"markup.heading.4" = "member_var"
+"markup.heading.5" = "symbol"
+"markup.heading.6" = "comment"
+"markup.list" = "symbol"
+"markup.list.checked" = "base_type"
+"markup.list.unchecked" = "comment"
+"markup.bold" = { fg = "white", modifiers = ["bold"] }
+"markup.italic" = { fg = "fg", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "function_call", underline.style = "line" }
+"markup.link.url" = { fg = "comment", underline.style = "line" }
+"markup.link.label" = "function_call"
+"markup.link.text" = "function_call"
+"markup.quote" = { fg = "comment", modifiers = ["italic"] }
+"markup.raw" = "string"
+"markup.raw.inline" = "string"
+"markup.raw.block" = "fg"
+
+"diff.plus" = "base_type"
+"diff.plus.gutter" = "base_type"
+"diff.minus" = "keyword"
+"diff.minus.gutter" = "keyword"
+"diff.delta" = "gd_annotation"
+"diff.delta.gutter" = "gd_annotation"
+
+# --- UI Elements ---
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = { fg = "gutter_bg" }
+
+"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor.normal" = { fg = "bg", bg = "white" }
+"ui.cursor.insert" = { fg = "bg", bg = "base_type" }
+"ui.cursor.select" = { fg = "bg", bg = "accent" }
+"ui.cursor.match" = { fg = "base_type", bg = "selection", modifiers = ["underlined"] }
+"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "white" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "base_type" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "accent" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "curr_line" }
+
+"ui.linenr" = { fg = "line_nr", bg = "bg" }
+"ui.linenr.selected" = { fg = "accent", bg = "curr_line", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "fg", bg = "gutter_bg" }
+"ui.statusline.inactive" = { fg = "line_nr", bg = "gutter_bg" }
+"ui.statusline.normal" = { fg = "bg", bg = "accent", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "base_type", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "gd_annotation", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "gutter_bg" }
+
+"ui.bufferline" = { fg = "line_nr", bg = "gutter_bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg" }
+"ui.bufferline.background" = { bg = "gutter_bg" }
+
+"ui.popup" = { fg = "fg", bg = "popup_bg" }
+"ui.popup.info" = { fg = "fg", bg = "popup_bg" }
+
+"ui.window" = { fg = "gutter_bg" }
+"ui.help" = { fg = "fg", bg = "popup_bg" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "white" }
+"ui.text.inactive" = { fg = "line_nr" }
+"ui.text.info" = { fg = "fg" }
+"ui.text.directory" = "function_call"
+
+"ui.virtual" = { fg = "line_nr" }
+"ui.virtual.ruler" = { bg = "curr_line" }
+"ui.virtual.whitespace" = { fg = "gutter_bg" }
+"ui.virtual.indent-guide" = { fg = "gutter_bg" }
+"ui.virtual.inlay-hint" = { fg = "line_nr" }
+"ui.virtual.inlay-hint.parameter" = { fg = "line_nr" }
+"ui.virtual.inlay-hint.type" = { fg = "line_nr" }
+"ui.virtual.wrap" = { fg = "gutter_bg" }
+"ui.virtual.jump-label" = { fg = "gd_annotation", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "fg", bg = "popup_bg" }
+"ui.menu.selected" = { fg = "white", bg = "selection", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "line_nr", bg = "popup_bg" }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+
+"ui.highlight" = { bg = "curr_line" }
+"ui.highlight.frameline" = { bg = "curr_line" }
+
+"ui.cursorline.primary" = { bg = "curr_line" }
+"ui.cursorline.secondary" = { bg = "curr_line" }
+"ui.cursorcolumn.primary" = { bg = "curr_line" }
+"ui.cursorcolumn.secondary" = { bg = "curr_line" }
+
+"warning" = { fg = "warning" }
+"error" = { fg = "error" }
+"info" = { fg = "symbol" }
+"hint" = { fg = "comment" }
+
+"diagnostic.hint" = { underline = { color = "comment", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "symbol", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# --- Palette ---
+# Derived from Godot's EditorThemeManager.cpp logic:
+#   bg        = darkened(base, contrast)
+#   gutter_bg = darkened(base, contrast * 0.4)
+#   curr_line = lightened(bg, 0.04)
+#   popup_bg  = lightened(bg, 0.15)
+#   line_nr   = lerp(fg, bg, 0.5)
+#   selection = lerp(accent, base, 0.4)
+
+[palette]
+bg = "#252a33"
+gutter_bg = "#2f3541"
+curr_line = "#2d323b"
+popup_bg = "#454951"
+selection = "#5888b3"
+line_nr = "#828589"
+fg = "#e0e0e0"
+white = "#ffffff"
+accent = "#70bafa"
+
+symbol = "#abc9ff"
+keyword = "#ff7085"
+control_flow = "#ff8ccc"
+base_type = "#42ffc2"
+engine_type = "#8fffdb"
+user_type = "#c7ffed"
+comment = "#8796a5"
+string = "#ffeda1"
+number = "#a1ffe0"
+function_def = "#66e5ff"
+function_call = "#57b3ff"
+builtin_func = "#a3a3f5"
+member_var = "#bce0ff"
+gd_node_path = "#baab76"
+gd_annotation = "#ffb373"
+error = "#ff6666"
+warning = "#ffdd66"
