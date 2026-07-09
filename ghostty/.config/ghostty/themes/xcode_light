@@ -1,0 +1,25 @@
+# Xcode Light theme for Ghostty
+# Matches the helix xcode_light theme: vibrant magenta/red/green/blue/teal on white
+
+background = #ffffff
+foreground = #000000
+cursor-color = #000000
+selection-background = #b5d5ff
+selection-foreground = #000000
+
+palette = 0=#000000
+palette = 1=#cc0000
+palette = 2=#009000
+palette = 3=#a06600
+palette = 4=#3300cc
+palette = 5=#c8008a
+palette = 6=#008a96
+palette = 7=#ededed
+palette = 8=#808080
+palette = 9=#f50000
+palette = 10=#00a800
+palette = 11=#c47a00
+palette = 12=#4400e6
+palette = 13=#e6009a
+palette = 14=#009aa8
+palette = 15=#ffffff

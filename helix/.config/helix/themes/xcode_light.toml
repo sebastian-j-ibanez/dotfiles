@@ -1,0 +1,157 @@
+## Xcode Light theme for Helix
+## Based on the Xcode light theme as rendered by the Ace editor (Rust Playground)
+## Magenta keywords, red strings, green comments, blue-violet numbers, purple types on white
+## No bold/italic — distinctions by colour only
+
+"attribute" = { fg = "preprocessor" }
+"comment" = "comments"
+"comment.block" = "comments"
+"comment.block.documentation" = "comments"
+"comment.line" = "comments"
+"comment.line.documentation" = "comments"
+"constant" = { fg = "constants_other" }
+"constant.builtin" = { fg = "keywords" }
+"constant.character" = { fg = "constants_other" }
+"constant.character.escape" = { fg = "constants_other" }
+"constant.numeric" = { fg = "constants_numeric" }
+"constructor" = { fg = "types" }
+"function" = { fg = "functions" }
+"function.builtin" = { fg = "preprocessor" }
+"function.macro" = { fg = "preprocessor" }
+"function.method" = { fg = "functions" }
+"function.special" = { fg = "preprocessor" }
+"keyword" = { fg = "keywords" }
+"keyword.control" = { fg = "keywords" }
+"keyword.directive" = { fg = "preprocessor" }
+"keyword.operator" = { fg = "keywords" }
+"label" = { fg = "keywords" }
+"operator" = { fg = "ui_text" }
+"punctuation.special" = { fg = "keywords" }
+"string" = "strings"
+"string.regexp" = "strings"
+"string.special" = { fg = "constants_other" }
+"tag" = { fg = "types" }
+"type" = { fg = "types" }
+"type.builtin" = { fg = "types" }
+"type.enum.variant" = { fg = "constants_other" }
+"variable" = { fg = "ui_text" }
+"variable.builtin" = { fg = "keywords" }
+"variable.other.member" = { fg = "ui_text" }
+"variable.parameter" = { fg = "ui_text" }
+
+"markup" = "markup"
+"markup.heading" = { fg = "markup_headings" }
+"markup.list" = "markup_lists"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "constants_numeric", underline.style = "line" }
+"markup.link.text" = "ui_text"
+"markup.quote" = { fg = "ui_text_dim" }
+"markup.raw" = "strings"
+
+"diff.delta" = "diff_delta"
+"diff.minus" = "diff_minus"
+"diff.plus" = "diff_plus"
+
+"ui.background" = { bg = "ui_background" }
+"ui.bufferline" = { fg = "ui_text_dim", bg = "ui_background_accent" }
+"ui.bufferline.active" = { fg = "ui_text", bg = "ui_background_accent" }
+"ui.bufferline.background" = { bg = "ui_background_accent" }
+"ui.cursor.insert" = { bg = "ui_mode_insert_accent" }
+"ui.cursor.match" = { modifiers = ['reversed'] }
+"ui.cursor.normal" = { bg = "ui_mode_normal_accent" }
+"ui.cursor.select" = { bg = "ui_mode_select_accent" }
+"ui.cursor.primary.insert" = { bg = "ui_mode_insert" }
+"ui.cursor.primary.normal" = { bg = "ui_mode_normal" }
+"ui.cursor.primary.select" = { bg = "ui_mode_select" }
+"ui.cursorcolumn.primary" = { bg = "ui_background_accent" }
+"ui.cursorline.primary" = { bg = "ui_background_accent" }
+"ui.debug.active" = { fg = "ui_debug_breakpoint" }
+"ui.debug.breakpoint" = { fg = "ui_debug_breakpoint" }
+"ui.gutter" = { bg = "ui_background" }
+"ui.gutter.selected" = { bg = "ui_background_accent" }
+"ui.help" = { fg = "ui_text", bg = "ui_menu" }
+"ui.highlight" = { fg = "ui_highlight_line_text", bg = "ui_highlight_line" }
+"ui.highlight.frameline" = { fg = "ui_highlight_line_text", bg = "ui_highlight_line" }
+"ui.linenr" = "ui_text_dim"
+"ui.linenr.selected" = { fg = "ui_text", bg = "ui_background_accent" }
+"ui.menu" = { fg = "ui_menu_text", bg = "ui_menu" }
+"ui.menu.scroll" = { fg = "ui_menu_handle", bg = "ui_menu_selected" }
+"ui.menu.selected" = { fg = "ui_text", bg = "ui_menu_selected" }
+"ui.picker.header" = { bg = "ui_background_accent" }
+"ui.picker.header.column" = "ui_text"
+"ui.picker.header.column.active" = { fg = "ui_text", underline = { style = "line" } }
+"ui.popup" = { fg = "ui_text", bg = "ui_background_accent" }
+"ui.popup.info" = { fg = "ui_text", bg = "ui_menu" }
+"ui.selection" = { bg = "ui_selection" }
+"ui.statusline" = { fg = "ui_text", bg = "ui_background_accent" }
+"ui.statusline.insert" = { fg = "ui_mode_insert_text", bg = "ui_mode_insert" }
+"ui.statusline.normal" = { fg = "ui_mode_normal_text", bg = "ui_mode_normal" }
+"ui.statusline.select" = { fg = "ui_mode_select_text", bg = "ui_mode_select" }
+"ui.text" = "ui_text"
+"ui.text.focus" = { fg = "ui_text" }
+"ui.text.inactive" = "ui_text_dim"
+"ui.virtual.indent-guide" = "ui_text_dim"
+"ui.virtual.inlay-hint" = "ui_text_dim"
+"ui.virtual.jump-label" = { fg = "white", bg = "ui_jumplabel" }
+"ui.virtual.ruler" = { bg = "ui_background_accent" }
+"ui.virtual.whitespace" = "ui_text_dim"
+"ui.virtual.wrap" = "ui_text_dim"
+"ui.window" = "ui_split_line"
+
+info = { fg = 'ui_diagnostic_info' }
+hint = { fg = 'ui_diagnostic_hint' }
+warning = { fg = 'ui_diagnostic_warning' }
+error = { fg = 'ui_diagnostic_error' }
+
+"diagnostic.info" = { fg = "ui_diagnostic_info", underline = { style = "curl", color = "ui_diagnostic_info" } }
+"diagnostic.hint" = { fg = "ui_diagnostic_hint", underline = { style = "curl", color = "ui_diagnostic_hint" } }
+"diagnostic.warning" = { fg = "ui_diagnostic_warning", underline = { style = "curl", color = "ui_diagnostic_warning" } }
+"diagnostic.error" = { fg = "ui_diagnostic_error", underline = { style = "curl", color = "ui_diagnostic_error" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+keywords = "#e6009a"
+strings = "#f50000"
+comments = "#00a800"
+constants_numeric = "#4400e6"
+constants_other = "#009aa8"
+functions = "#009aa8"
+types = "#aa00e6"
+preprocessor = "#6600e0"
+markup = "#000000"
+markup_headings = "#3200ff"
+markup_lists = "#e6009a"
+diff_delta = "#3200ff"
+diff_minus = "#f50000"
+diff_plus = "#00a800"
+ui_background = "#ffffff"
+ui_background_accent = "#ededed"
+ui_highlight_line = "#d4e6ff"
+ui_highlight_line_text = "#000000"
+ui_debug_breakpoint = "#3200ff"
+ui_diagnostic_error = "#f50000"
+ui_diagnostic_hint = "#009aa8"
+ui_diagnostic_info = "#808080"
+ui_diagnostic_warning = "#c47a00"
+ui_jumplabel = "#e6009a"
+ui_menu = "#f0f0f0"
+ui_menu_selected = "#b5d5ff"
+ui_menu_handle = "#c8c8c8"
+ui_menu_text = "#000000"
+ui_mode_insert = "#00a800"
+ui_mode_insert_accent = "#7ee87e"
+ui_mode_insert_text = "#ffffff"
+ui_mode_normal = "#3d3d3d"
+ui_mode_normal_accent = "#cfcfcf"
+ui_mode_normal_text = "#ffffff"
+ui_mode_select = "#3200ff"
+ui_mode_select_accent = "#b3a5f2"
+ui_mode_select_text = "#ffffff"
+ui_selection = "#b5d5ff"
+ui_split_line = "#c8c8c8"
+ui_statusline = "#000000"
+ui_text = "#000000"
+ui_text_dim = "#a5a5a5"
