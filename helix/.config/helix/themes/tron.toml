@@ -1,199 +1,215 @@
 # TRON theme for Helix
+# Ported 1:1 from what aether.nvim actually renders for the Omarchy "Tron"
+# theme in Neovim (colors captured via `nvim_get_hl` against the live
+# colorscheme), not hand-picked independently.
 
 # --- Syntax Highlighting ---
 
-"attribute" = "slate"
+"attribute" = "cyan"
 
-"type" = "fg"
-"type.builtin" = "ice"
+"type" = "pale"
+"type.builtin" = "fg"
 "type.parameter" = "fg"
-"type.enum.variant" = "ice"
-"constructor" = "flux"
+"type.enum.variant" = "pale"
+"constructor" = "pale"
 
-"constant" = "fg"
-"constant.builtin" = "fg"
-"constant.character" = "slate"
-"constant.character.escape" = "ice"
-"constant.numeric" = "ice"
-"constant.numeric.integer" = "ice"
-"constant.numeric.float" = "ice"
+"constant" = "neon"
+"constant.builtin" = "cyan"
+"constant.character" = "teal"
+"constant.character.escape" = "sky"
+"constant.numeric" = "neon"
+"constant.numeric.integer" = "neon"
+"constant.numeric.float" = "neon"
 
-"string" = "slate"
-"string.regexp" = "grid"
-"string.special" = "clu"
-"string.special.path" = "slate"
-"string.special.url" = { fg = "slate", underline.style = "line" }
+"string" = "teal"
+"string.regexp" = "bright_cyan"
+"string.special" = "peri"
+"string.special.path" = "peri"
+"string.special.url" = { fg = "cyan", underline.style = "line" }
 "string.special.symbol" = "fg"
 
-"comment" = "dim_bright"
-"comment.line" = "dim_bright"
-"comment.block" = "dim_bright"
-"comment.block.documentation" = "dim_bright"
+"comment" = "muted"
+"comment.line" = "muted"
+"comment.block" = "muted"
+"comment.block.documentation" = "muted"
 
 "variable" = "fg"
-"variable.builtin" = "grid"
-"variable.parameter" = "fg"
-"variable.other.member" = "fg"
+"variable.builtin" = "fg"
+"variable.parameter" = "cyan"
+"variable.other.member" = "cyan"
 
-"label" = "flux"
+"label" = "pale"
 
-"punctuation" = "dim_bright"
-"punctuation.delimiter" = "dim_bright"
-"punctuation.bracket" = "dim_bright"
-"punctuation.special" = "fg"
+"punctuation" = "punct"
+"punctuation.delimiter" = "punct"
+"punctuation.bracket" = "punct"
+"punctuation.special" = "blue_bright"
 
-"keyword" = "clu"
-"keyword.control" = "clu"
-"keyword.control.conditional" = "clu"
-"keyword.control.repeat" = "clu"
-"keyword.control.import" = "clu"
-"keyword.control.return" = "clu"
-"keyword.control.exception" = "clu"
-"keyword.operator" = "clu"
-"keyword.directive" = "ice"
-"keyword.function" = "clu"
-"keyword.storage" = "clu"
-"keyword.storage.type" = "clu"
-"keyword.storage.modifier" = "clu"
+"keyword" = "sky"
+"keyword.control" = "sky"
+"keyword.control.conditional" = "sky"
+"keyword.control.repeat" = "sky"
+"keyword.control.import" = "sky"
+"keyword.control.return" = "sky"
+"keyword.control.exception" = "sky"
+"keyword.operator" = "fg"
+"keyword.directive" = "cyan"
+"keyword.function" = "sky"
+"keyword.storage" = "sky"
+"keyword.storage.type" = "sky"
+"keyword.storage.modifier" = "sky"
 
-"operator" = "flux"
-"special" = "flux"
+"operator" = "fg"
+"special" = "cyan"
 
-"function" = "grid"
-"function.builtin" = "grid"
-"function.method" = "grid"
-"function.macro" = "clu"
-"function.special" = "grid"
+"function" = "accent"
+"function.builtin" = "cyan"
+"function.method" = "accent"
+"function.macro" = "cyan"
+"function.special" = "cyan"
 
-"tag" = "flux"
-"tag.builtin" = "flux"
+"tag" = "pale"
+"tag.builtin" = "pale"
 
-"namespace" = "dim_bright"
+"namespace" = "muted"
 
-"markup.heading" = "fg"
-"markup.heading.1" = "grid"
-"markup.heading.2" = "grid"
-"markup.heading.3" = "fg"
-"markup.heading.4" = "fg"
-"markup.heading.5" = "dim_bright"
-"markup.heading.6" = "dim_bright"
-"markup.list" = "clu"
+"markup.heading" = "accent"
+"markup.heading.1" = "accent"
+"markup.heading.2" = "accent"
+"markup.heading.3" = "accent"
+"markup.heading.4" = "accent"
+"markup.heading.5" = "accent"
+"markup.heading.6" = "accent"
+"markup.list" = "cyan"
+"markup.list.unchecked" = "muted"
+"markup.list.checked" = "teal"
 "markup.bold" = "fg"
 "markup.italic" = "fg"
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link" = { fg = "slate", underline.style = "line" }
-"markup.link.url" = { fg = "slate", underline.style = "line" }
-"markup.link.label" = "slate"
-"markup.link.text" = "grid"
-"markup.quote" = "dim_bright"
-"markup.raw" = "flux"
-"markup.raw.inline" = "flux"
-"markup.raw.block" = "flux"
+"markup.link" = { fg = "cyan", underline.style = "line" }
+"markup.link.url" = { fg = "cyan", underline.style = "line" }
+"markup.link.label" = "accent"
+"markup.link.text" = "accent"
+"markup.quote" = "muted"
+"markup.raw" = "teal"
+"markup.raw.inline" = "teal"
+"markup.raw.block" = "teal"
 
-"diff.plus" = "grid"
-"diff.plus.gutter" = "grid"
-"diff.minus" = "clu"
-"diff.minus.gutter" = "clu"
-"diff.delta" = "ice"
-"diff.delta.gutter" = "ice"
+"diff.plus" = "green_bright"
+"diff.plus.gutter" = "green_bright"
+"diff.minus" = "peri"
+"diff.minus.gutter" = "peri"
+"diff.delta" = "pale"
+"diff.delta.gutter" = "pale"
 
 # --- UI Elements ---
 
-"ui.background" = { bg = "bg" }
-"ui.background.separator" = { fg = "dark" }
+# Leave the editor background transparent, matching aether.nvim's Normal
+# group (which leaves bg unset so the terminal background shows through).
+"ui.background" = { }
+"ui.background.separator" = { fg = "muted" }
 
-"ui.cursor" = { fg = "bg", bg = "white" }
+"ui.cursor" = { fg = "bg", bg = "bright_fg" }
 "ui.cursor.normal" = { fg = "bg", bg = "fg" }
-"ui.cursor.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.select" = { fg = "bg", bg = "grid" }
-"ui.cursor.match" = { fg = "black", bg = "grid" }
-"ui.cursor.primary" = { fg = "bg", bg = "white" }
+"ui.cursor.insert" = { fg = "bg", bg = "green_bright" }
+"ui.cursor.select" = { fg = "bg", bg = "sky" }
+"ui.cursor.match" = { fg = "bg", bg = "pale" }
+"ui.cursor.primary" = { fg = "bg", bg = "bright_fg" }
 "ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
-"ui.cursor.primary.insert" = { fg = "bg", bg = "bright" }
-"ui.cursor.primary.select" = { fg = "bg", bg = "grid" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "green_bright" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "sky" }
 
 "ui.gutter" = { bg = "bg" }
-"ui.gutter.selected" = { bg = "bg_1" }
+"ui.gutter.selected" = { bg = "bg_cursorline" }
 
-"ui.linenr" = { fg = "dark" }
-"ui.linenr.selected" = { fg = "grid" }
+"ui.linenr" = { fg = "muted" }
+"ui.linenr.selected" = { fg = "pale" }
 
-"ui.statusline" = { fg = "fg", bg = "dark" }
-"ui.statusline.inactive" = { fg = "dim_bright", bg = "bg_1" }
-"ui.statusline.normal" = { fg = "fg", bg = "dark" }
-"ui.statusline.insert" = { fg = "black", bg = "ice" }
-"ui.statusline.select" = { fg = "black", bg = "clu" }
-"ui.statusline.separator" = { fg = "dark" }
+"ui.statusline" = { fg = "fg", bg = "bg_dark" }
+"ui.statusline.inactive" = { fg = "muted", bg = "bg_dark" }
+"ui.statusline.normal" = { fg = "bg", bg = "accent" }
+"ui.statusline.insert" = { fg = "bg", bg = "green_bright" }
+"ui.statusline.select" = { fg = "bg", bg = "sky" }
+"ui.statusline.separator" = { fg = "muted" }
 
-"ui.bufferline" = { fg = "dim_bright", bg = "bg" }
-"ui.bufferline.active" = { fg = "fg", bg = "bg_1" }
+"ui.bufferline" = { fg = "muted", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg", underline = { color = "cyan", style = "line" } }
 "ui.bufferline.background" = { bg = "bg" }
 
-"ui.popup" = { fg = "fg", bg = "bg_1" }
-"ui.popup.info" = { fg = "fg", bg = "bg_1" }
+"ui.popup" = { fg = "fg", bg = "bg_dark" }
+"ui.popup.info" = { fg = "fg", bg = "bg_dark" }
 
-"ui.window" = { fg = "dark" }
-"ui.help" = { fg = "fg", bg = "bg_1" }
+"ui.window" = { fg = "muted" }
+"ui.help" = { fg = "fg", bg = "bg_dark" }
 
 "ui.text" = { fg = "fg" }
-"ui.text.focus" = { fg = "bright" }
-"ui.text.inactive" = { fg = "dim_bright" }
+"ui.text.focus" = { fg = "bright_fg" }
+"ui.text.inactive" = { fg = "muted" }
 "ui.text.info" = { fg = "fg" }
-"ui.text.directory" = "grid"
+"ui.text.directory" = "accent"
 
-"ui.virtual" = { fg = "dark" }
-"ui.virtual.ruler" = { bg = "bg_1" }
-"ui.virtual.whitespace" = { fg = "dark" }
-"ui.virtual.indent-guide" = { fg = "dark" }
-"ui.virtual.inlay-hint" = { fg = "dim" }
-"ui.virtual.inlay-hint.parameter" = { fg = "dim" }
-"ui.virtual.inlay-hint.type" = { fg = "dim" }
-"ui.virtual.wrap" = { fg = "dark" }
-"ui.virtual.jump-label" = "clu"
+"ui.virtual" = { fg = "muted" }
+"ui.virtual.ruler" = { bg = "bg_cursorline" }
+"ui.virtual.whitespace" = { fg = "muted" }
+"ui.virtual.indent-guide" = { fg = "muted" }
+"ui.virtual.inlay-hint" = { fg = "muted" }
+"ui.virtual.inlay-hint.parameter" = { fg = "muted" }
+"ui.virtual.inlay-hint.type" = { fg = "muted" }
+"ui.virtual.wrap" = { fg = "muted" }
+"ui.virtual.jump-label" = "peri"
 
-"ui.menu" = { fg = "grid", bg = "bg_1" }
-"ui.menu.selected" = { fg = "fg", bg = "bg_1" }
-"ui.menu.scroll" = { fg = "dim", bg = "bg_1" }
+"ui.menu" = { fg = "fg", bg = "bg_dark" }
+"ui.menu.selected" = { fg = "fg", bg = "bg_sel_menu" }
+"ui.menu.scroll" = { fg = "muted", bg = "bg_scroll" }
 
-"ui.selection" = { fg = "grid", bg = "bg_1" }
-"ui.selection.primary" = { fg = "grid", bg = "bg_1" }
+"ui.selection" = { fg = "bg", bg = "fg" }
+"ui.selection.primary" = { fg = "bg", bg = "fg" }
 
-"ui.highlight" = { bg = "bg_1" }
-"ui.highlight.frameline" = { bg = "bg_1" }
+"ui.highlight" = { bg = "bg_cursorline" }
+"ui.highlight.frameline" = { bg = "bg_cursorline" }
 
-"ui.cursorline.primary" = { bg = "bg_1" }
-"ui.cursorline.secondary" = { bg = "bg_1" }
-"ui.cursorcolumn.primary" = { bg = "bg_1" }
-"ui.cursorcolumn.secondary" = { bg = "bg_1" }
+"ui.cursorline.primary" = { bg = "bg_cursorline" }
+"ui.cursorline.secondary" = { bg = "bg_cursorline" }
+"ui.cursorcolumn.primary" = { bg = "bg_cursorline" }
+"ui.cursorcolumn.secondary" = { bg = "bg_cursorline" }
 
-"warning" = { fg = "flux" }
-"error" = { fg = "clu" }
-"info" = { fg = "ice" }
-"hint" = { fg = "dim" }
+"warning" = { fg = "pale" }
+"error" = { fg = "peri" }
+"info" = { fg = "accent" }
+"hint" = { fg = "cyan" }
 
-"diagnostic.hint" = { underline = { color = "dim", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "ice", style = "dotted" } }
-"diagnostic.warning" = { underline = { color = "flux", style = "curl" } }
-"diagnostic.error" = { underline = { color = "clu", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cyan", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "accent", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "pale", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
 # --- Palette ---
-# The Grid — deep black void, cyan light lines, burnt orange identity discs.
+# Every value below is copied directly from what aether.nvim resolves for the
+# Omarchy "Tron" theme in Neovim (captured live via `nvim_get_hl`), not
+# independently chosen — this file should look identical to Neovim.
 
 [palette]
-black = "#000000"
-bg = "#0C1018"
-bg_1 = "#141E2E"
-dark = "#1E2E40"
-dim = "#283C50"
-dim_bright = "#446888"
-fg = "#88C0D8"
-bright = "#B0E0F0"
-white = "#E0F8FF"
+bg = "#001113"
+bg_dark = "#000d0e"          # StatusLine / popup / menu background
+bg_scroll = "#08191a"        # PmenuSbar
+bg_sel_menu = "#4e5759"      # PmenuSel
+bg_cursorline = "#203f41"    # CursorLine
 
-grid = "#00D4EE"
-clu = "#CC7A3A"
-ice = "#60B8D8"
-flux = "#4A90A8"
-slate = "#7898A8"
+fg = "#a0f5fa"                # Normal / @variable
+bright_fg = "#e0f5f9"         # bright_foreground, primary cursor block
+muted = "#61696a"             # Comment / LineNr / muted UI chrome
+punct = "#508387"             # @punctuation.delimiter / @punctuation.bracket
+
+accent = "#2a8aad"            # Function / Title / Directory / markup.heading
+cyan = "#3af0ff"              # PreProc / Special / @attribute / markup.list
+bright_cyan = "#00ffff"       # Identifier / @string.regexp / @tag.attribute
+teal = "#57d6d5"              # String / Character / markup.raw
+pale = "#6efffe"              # Number / Type / Label / Tag / diff.delta / warning
+neon = "#32ffff"              # Constant / constant.numeric
+sky = "#56c8ff"               # Keyword / Conditional / @string.escape
+peri = "#78a7ec"              # SpecialChar / Tag / @string.special / diff.minus / error
+red = "#6f92c9"               # diagnostic.error underline (the one contrasting hue)
+blue_bright = "#22a1cc"       # @punctuation.special
+green_bright = "#36f2f2"      # diff.plus / insert-mode accents

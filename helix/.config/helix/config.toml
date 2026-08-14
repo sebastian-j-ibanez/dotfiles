@@ -1,5 +1,4 @@
-theme = "eiffel_plain"
-# theme = "cyan_light"
+theme = "rose_pine_dawn"
 
 [editor]
 line-number = "relative" 

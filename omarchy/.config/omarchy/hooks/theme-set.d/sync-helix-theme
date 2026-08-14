@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Keep Helix's active theme in sync with the Omarchy theme.
+# Only acts when a Helix theme file exists matching the Omarchy theme slug
+# (dashes translated to underscores, e.g. "clownfish-light" -> clownfish_light.toml);
+# otherwise Helix is left on whatever theme it already had.
+
+THEME_NAME="$1"
+HELIX_CONFIG="$HOME/.config/helix/config.toml"
+HELIX_THEME_NAME="${THEME_NAME//-/_}"
+HELIX_THEME_FILE="$HOME/.config/helix/themes/$HELIX_THEME_NAME.toml"
+
+[[ -f $HELIX_THEME_FILE && -f $HELIX_CONFIG ]] || exit 0
+
+sed -i "s/^theme = .*/theme = \"$HELIX_THEME_NAME\"/" "$HELIX_CONFIG"
+
+pgrep -x helix >/dev/null && pkill -USR1 helix
