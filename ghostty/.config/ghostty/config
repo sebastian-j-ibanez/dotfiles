@@ -1,5 +1,4 @@
 theme = eiffel_plain
-# theme = cyan_light
 font-family = "FiraCode Nerd Font Mono"	
 font-size = 11
 cursor-style = bar

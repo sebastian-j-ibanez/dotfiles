@@ -1,4 +1,5 @@
-theme = "omarchy"
+theme = "eiffel_plain"
+# theme = "omarchy"
 
 [editor]
 line-number = "relative" 
