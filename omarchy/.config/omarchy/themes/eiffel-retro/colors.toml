@@ -1,0 +1,34 @@
+# Aether-assisted Omarchy theme inspired by eiffel_plain.
+# The original saturated 2000s accents are retained, with deeper shades for
+# reliable readable text against the deliberately near-white desktop surfaces.
+mode = "light"
+
+accent = "#006810"
+selection = "#C8D8FF"
+muted = "#61708A"
+
+background = "#F8FBFF"
+dark_background = "#E9EFF8"
+darker_background = "#DBE5F4"
+lighter_background = "#FFFFFF"
+
+foreground = "#101827"
+dark_foreground = "#4E5C72"
+light_foreground = "#27364E"
+bright_foreground = "#000000"
+
+red = "#B42318"
+yellow = "#735500"
+orange = "#A33A00"
+green = "#006810"
+cyan = "#006D73"
+blue = "#006810"
+magenta = "#9C147F"
+brown = "#744B2F"
+
+bright_red = "#D80800"
+bright_yellow = "#8B6200"
+bright_green = "#008A1C"
+bright_cyan = "#007878"
+bright_blue = "#00B418"
+bright_magenta = "#B90690"
