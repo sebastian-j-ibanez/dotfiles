@@ -3,8 +3,9 @@
 # reliable readable text against the deliberately near-white desktop surfaces.
 mode = "light"
 
-accent = "#006810"
-selection = "#C8D8FF"
+accent = "#316AC5"
+hyprland_active_border = "#316AC5"
+selection = "#639ACE"
 muted = "#61708A"
 
 background = "#F8FBFF"
@@ -22,7 +23,7 @@ yellow = "#735500"
 orange = "#A33A00"
 green = "#006810"
 cyan = "#006D73"
-blue = "#006810"
+blue = "#316AC5"
 magenta = "#9C147F"
 brown = "#744B2F"
 
@@ -30,5 +31,5 @@ bright_red = "#D80800"
 bright_yellow = "#8B6200"
 bright_green = "#008A1C"
 bright_cyan = "#007878"
-bright_blue = "#00B418"
+bright_blue = "#5E9EFF"
 bright_magenta = "#B90690"
