@@ -1,0 +1,32 @@
+mode = "dark"
+
+# Neutral charcoal desktop palette with an intentionally white focal accent.
+accent = "#f5f5f5"
+selection = "#44474e"
+muted = "#656972"
+
+background = "#282c33"
+dark_background = "#202329"
+darker_background = "#181a1f"
+lighter_background = "#343840"
+
+foreground = "#e5e7eb"
+dark_foreground = "#858993"
+light_foreground = "#c8ccd4"
+bright_foreground = "#f5f5f5"
+
+red = "#d07277"
+yellow = "#dfc184"
+orange = "#bf956a"
+green = "#a1c181"
+cyan = "#6eb4bf"
+blue = "#73ade9"
+magenta = "#c28acb"
+brown = "#7b5b55"
+
+bright_red = "#e2868b"
+bright_yellow = "#eccf96"
+bright_green = "#b5d498"
+bright_cyan = "#83c6cf"
+bright_blue = "#8dc1f0"
+bright_magenta = "#d4a1d8"
