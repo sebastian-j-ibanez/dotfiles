@@ -1,0 +1,26 @@
+# seoul256-light-soft theme for Ghostty
+# Ported from the Helix Seoul256 light theme (original: junegunn/seoul256.vim).
+
+background = #d0d0d0
+foreground = #14161B
+cursor-color = #3a3a3a
+cursor-text = #d0d0d0
+selection-background = #afd7d7
+selection-foreground = #14161B
+
+palette = 0=#14161B
+palette = 1=#d70000
+palette = 2=#5f5f00
+palette = 3=#875f00
+palette = 4=#5f87d7
+palette = 5=#d75f87
+palette = 6=#008787
+palette = 7=#d0d0d0
+palette = 8=#626262
+palette = 9=#d7005f
+palette = 10=#5f875f
+palette = 11=#d7875f
+palette = 12=#5fafaf
+palette = 13=#af5f87
+palette = 14=#005f5f
+palette = 15=#eeeeee

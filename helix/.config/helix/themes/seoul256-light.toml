@@ -1,0 +1,14 @@
+# Inherit the built-in theme and blend the gutter into the editor background.
+inherits = "seoul256-light"
+
+"ui.gutter" = { bg = "white1" }
+"ui.gutter.selected" = { bg = "white1" }
+"ui.linenr" = { fg = "gray7" }
+"ui.linenr.selected" = { fg = "gray7", bg = "white1", modifiers = ["bold"] }
+
+# Neutral status bars; inactive windows use softer text.
+"ui.statusline" = { fg = "black1", bg = "white" }
+"ui.statusline.inactive" = { fg = "gray7", bg = "white1" }
+"ui.statusline.normal" = { fg = "black1", bg = "white", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black1", bg = "white", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "black1", bg = "white", modifiers = ["bold"] }

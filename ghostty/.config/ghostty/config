@@ -1,10 +1,10 @@
-theme = xcode_light
-font-family = "FiraCode Nerd Font Mono"	
+theme = seoul256-light
+font-family = "Martian Mono"
 font-size = 11
 cursor-style = bar
 adjust-cursor-thickness = 3
 window-width = 110
-window-height = 33
+window-height = 40
 shell-integration-features = ssh-env,ssh-terminfo
 keybind = ctrl+shift+h=move_tab:-1
 keybind = ctrl+shift+l=move_tab:1
