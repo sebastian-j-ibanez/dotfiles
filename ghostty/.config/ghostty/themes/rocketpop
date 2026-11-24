@@ -1,0 +1,29 @@
+# Rocketpop theme for Ghostty
+# Ported from the Helix rocketpop theme: neutrals + red/blue only.
+# Hue mapping: green -> blue, yellow/magenta -> deep red, cyan -> deep blue.
+
+background = #f8f8f8
+foreground = #222426
+cursor-color = #222426
+cursor-text = #f8f8f8
+selection-background = #d3e4f7
+selection-foreground = #222426
+
+# normal
+palette = 0=#222426
+palette = 1=#f76262
+palette = 2=#418cdd
+palette = 3=#d43a3a
+palette = 4=#418cdd
+palette = 5=#d43a3a
+palette = 6=#1a5fa8
+palette = 7=#6a6c6e
+# bright
+palette = 8=#888888
+palette = 9=#f76262
+palette = 10=#418cdd
+palette = 11=#d43a3a
+palette = 12=#418cdd
+palette = 13=#d43a3a
+palette = 14=#1a5fa8
+palette = 15=#a0a0a0

@@ -1,0 +1,153 @@
+## rocketpop
+## red keywords + builtin types, blue types, soft grey comments on near-white.
+## No bold/italics: all distinctions are colour.
+
+# --- syntax ---------------------------------------------------------------
+"comment" = "comment"
+
+"keyword" = "red"
+"keyword.directive" = "red_deep"
+"keyword.operator" = "red"
+"keyword.storage" = "red"
+
+"type" = "blue"
+"type.builtin" = "red"
+"type.enum.variant" = "blue_deep"
+"constructor" = "blue"
+"namespace" = "fg"
+
+"function" = "blue"
+"function.builtin" = "red"
+"function.macro" = "red_deep"
+"function.method" = "blue"
+
+"constant" = "blue_deep"
+"constant.builtin" = "red"
+"constant.numeric" = "red_deep"
+"constant.character" = "blue_deep"
+"constant.character.escape" = "red"
+
+"string" = "blue_deep"
+"string.regexp" = "red_deep"
+"string.special" = "red_deep"
+
+"variable" = "fg"
+"variable.builtin" = "red"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+
+"attribute" = "red_deep"
+"label" = "blue_deep"
+"operator" = "fg"
+"punctuation" = "fg"
+"punctuation.special" = "red"
+"special" = "red"
+"tag" = "red"
+
+# --- markup ---------------------------------------------------------------
+"markup.heading" = "red"
+"markup.heading.marker" = "comment"
+"markup.list" = "red"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue", underline.style = "line" }
+"markup.link.text" = "blue"
+"markup.link.label" = "blue_deep"
+"markup.quote" = "comment"
+"markup.raw" = "blue_deep"
+
+# --- diff -----------------------------------------------------------------
+"diff.plus" = "blue"
+"diff.minus" = "red"
+"diff.delta" = "comment"
+
+# --- ui -------------------------------------------------------------------
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.text" = "fg"
+"ui.text.focus" = { fg = "fg", bg = "bg_alt" }
+"ui.text.inactive" = "comment"
+"ui.text.info" = "fg"
+
+"ui.cursor" = { fg = "bg", bg = "fg_soft" }
+"ui.cursor.primary" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "blue" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "red" }
+"ui.cursor.match" = { bg = "match" }
+
+"ui.selection" = { bg = "selection_alt" }
+"ui.selection.primary" = { bg = "selection" }
+
+"ui.cursorline.primary" = { bg = "bg_alt" }
+"ui.cursorcolumn.primary" = { bg = "bg_alt" }
+
+"ui.gutter" = { bg = "bg" }
+"ui.gutter.selected" = { bg = "bg_alt" }
+"ui.linenr" = "linenr"
+"ui.linenr.selected" = { fg = "fg", bg = "bg_alt" }
+
+"ui.statusline" = { fg = "fg", bg = "bg_ui" }
+"ui.statusline.inactive" = { fg = "comment", bg = "bg_alt" }
+"ui.statusline.normal" = { fg = "bg", bg = "fg" }
+"ui.statusline.insert" = { fg = "bg", bg = "blue" }
+"ui.statusline.select" = { fg = "bg", bg = "red" }
+
+"ui.bufferline" = { fg = "comment", bg = "bg_ui" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg" }
+"ui.bufferline.background" = { bg = "bg_ui" }
+
+"ui.popup" = { fg = "fg", bg = "bg_ui" }
+"ui.popup.info" = { fg = "fg", bg = "bg_ui" }
+"ui.help" = { fg = "fg", bg = "bg_ui" }
+"ui.menu" = { fg = "fg", bg = "bg_ui" }
+"ui.menu.selected" = { fg = "fg", bg = "selection" }
+"ui.menu.scroll" = { fg = "linenr", bg = "bg_ui" }
+"ui.picker.header" = { bg = "bg_ui" }
+"ui.picker.header.column.active" = { fg = "blue", underline.style = "line" }
+
+"ui.window" = "border"
+"ui.highlight" = { bg = "selection_alt" }
+"ui.virtual.ruler" = { bg = "bg_alt" }
+"ui.virtual.whitespace" = "border"
+"ui.virtual.indent-guide" = "border"
+"ui.virtual.wrap" = "linenr"
+"ui.virtual.inlay-hint" = "comment"
+"ui.virtual.jump-label" = { fg = "bg", bg = "red" }
+
+"ui.debug.breakpoint" = "red"
+"ui.debug.active" = "blue"
+
+# --- diagnostics ----------------------------------------------------------
+"error" = "red"
+"warning" = "red_deep"
+"info" = "blue"
+"hint" = "comment"
+
+"diagnostic.error" = { underline = { style = "curl", color = "red" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "red_deep" } }
+"diagnostic.info" = { underline = { style = "curl", color = "blue" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "comment" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+# sampled directly from the screenshot
+bg = "#f8f8f8"
+fg = "#222426"
+comment = "#888888"
+red = "#f76262"
+blue = "#418cdd"
+
+# derived from the sampled hues (same hue, darker) for literals
+red_deep = "#d43a3a"
+blue_deep = "#1a5fa8"
+
+# ui neutrals
+fg_soft = "#6a6c6e"
+bg_alt = "#efefef"
+bg_ui = "#e6e6e6"
+border = "#d4d4d4"
+linenr = "#b0b0b0"
+selection = "#d3e4f7"
+selection_alt = "#e6eef8"
+match = "#ffd0d0"
